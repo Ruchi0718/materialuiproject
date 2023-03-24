@@ -1,41 +1,42 @@
 import React, { useState } from "react";
-import { Box, Grid, Typography, Button, Checkbox } from "@mui/material";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+import { Box } from "@mui/system";
+// import {  Grid, Typography, Button, Checkbox } from "@mui/material";
+// import FormControlLabel from "@mui/material/FormControlLabel";
+// import MenuItem from "@mui/material/MenuItem";
+// import FormControl from "@mui/material/FormControl";
+// import Select from "@mui/material/Select";
 
 const Form = () => {
-  const [religion, setReligion] = useState("");
-  const [lookingFor, setLookingFor] = useState("");
-  const [age, setAge] = useState("");
-  const [toage, setToage] = useState("");
-  const [caste, setCaste] = useState("");
-  const [community, setCommunity] = useState("");
-  const [country, setCountry] = useState("");
+  // const [religion, setReligion] = useState("");
+  // const [lookingFor, setLookingFor] = useState("");
+  // const [age, setAge] = useState("");
+  // const [toage, setToage] = useState("");
+  // const [caste, setCaste] = useState("");
+  // const [community, setCommunity] = useState("");
+  // const [country, setCountry] = useState("");
 
-  const handleChangeAge = (event) => {
-    setAge(event.target.value);
-  };
-  const handleChangetoAge = (event) => {
-    setToage(event.target.value);
-  };
+  // const handleChangeAge = (event) => {
+  //   setAge(event.target.value);
+  // };
+  // const handleChangetoAge = (event) => {
+  //   setToage(event.target.value);
+  // };
 
-  const handleChange = (event) => {
-    setLookingFor(event.target.value);
-  };
-  const handleChangereligion = (event) => {
-    setReligion(event.target.value);
-  };
-  const handleChangeCaste = (event) => {
-    setCaste(event.target.value);
-  };
-  const handleChangeCommunity = (event) => {
-    setCommunity(event.target.value);
-  };
-  const handleChangeCountry = (event) => {
-    setCountry(event.target.value);
-  };
+  // const handleChange = (event) => {
+  //   setLookingFor(event.target.value);
+  // };
+  // const handleChangereligion = (event) => {
+  //   setReligion(event.target.value);
+  // };
+  // const handleChangeCaste = (event) => {
+  //   setCaste(event.target.value);
+  // };
+  // const handleChangeCommunity = (event) => {
+  //   setCommunity(event.target.value);
+  // };
+  // const handleChangeCountry = (event) => {
+  //   setCountry(event.target.value);
+  // };
   return (
     <>
       <Box sx={{ height:620 }}>
