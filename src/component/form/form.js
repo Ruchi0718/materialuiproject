@@ -1,57 +1,61 @@
 import React, { useState } from "react";
-import { Box } from "@mui/system";
-// import {  Grid, Typography, Button, Checkbox } from "@mui/material";
-// import FormControlLabel from "@mui/material/FormControlLabel";
-// import MenuItem from "@mui/material/MenuItem";
-// import FormControl from "@mui/material/FormControl";
-// import Select from "@mui/material/Select";
+import { Box, Grid, Typography, Button, Checkbox } from "@mui/material";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 const Form = () => {
-  // const [religion, setReligion] = useState("");
-  // const [lookingFor, setLookingFor] = useState("");
-  // const [age, setAge] = useState("");
-  // const [toage, setToage] = useState("");
-  // const [caste, setCaste] = useState("");
-  // const [community, setCommunity] = useState("");
-  // const [country, setCountry] = useState("");
+  const [religion, setReligion] = useState("");
+  const [lookingFor, setLookingFor] = useState("");
+  const [age, setAge] = useState("");
+  const [toage, setToage] = useState("");
+  const [caste, setCaste] = useState("");
+  const [community, setCommunity] = useState("");
+  const [country, setCountry] = useState("");
 
-  // const handleChangeAge = (event) => {
-  //   setAge(event.target.value);
-  // };
-  // const handleChangetoAge = (event) => {
-  //   setToage(event.target.value);
-  // };
+  const handleChangeAge = (event) => {
+    setAge(event.target.value);
+  };
+  const handleChangetoAge = (event) => {
+    setToage(event.target.value);
+  };
 
-  // const handleChange = (event) => {
-  //   setLookingFor(event.target.value);
-  // };
-  // const handleChangereligion = (event) => {
-  //   setReligion(event.target.value);
-  // };
-  // const handleChangeCaste = (event) => {
-  //   setCaste(event.target.value);
-  // };
-  // const handleChangeCommunity = (event) => {
-  //   setCommunity(event.target.value);
-  // };
-  // const handleChangeCountry = (event) => {
-  //   setCountry(event.target.value);
-  // };
+  const handleChange = (event) => {
+    setLookingFor(event.target.value);
+  };
+  const handleChangereligion = (event) => {
+    setReligion(event.target.value);
+  };
+  const handleChangeCaste = (event) => {
+    setCaste(event.target.value);
+  };
+  const handleChangeCommunity = (event) => {
+    setCommunity(event.target.value);
+  };
+  const handleChangeCountry = (event) => {
+    setCountry(event.target.value);
+  };
   return (
     <>
-      <Box sx={{ height:620 }}>
+      <Box sx={{ height: 620 }}>
         <Box
+          display="flex"
+          flexDirection={"column"}
+          alignItems="center"
+          justifyContent={"center"}
           sx={{
             padding: 2,
-            marginLeft: "4%",
+            marginLeft: { lg: "4%", xs: 0 },
+            marginRight: { xs: "4%" },
             // marginTop: "1%",
-            width: {lg:450,xs:200,sm:300,md:350},
-            height:{lg:500,xs:350,sm:400,md:450},
-            marginTop:4,
+            width: { lg: 450 },
+            height: { lg: 500 },
+            marginTop: 4,
             backgroundColor: "#F8F8F8",
           }}
         >
-          {/* <Grid container>
+          <Grid container>
             <Grid
               ml={14}
               sx={{
@@ -82,7 +86,7 @@ const Form = () => {
               </Typography>
             </Grid>
             <Grid item xs={6}>
-              <FormControl sx={{ width: 280 }}>
+              <FormControl sx={{ lg:280,xs:200,sm:200,md:200 }}>
                 <Select fullWidth value={lookingFor} onChange={handleChange}>
                   <MenuItem value={"bride"}>Bride</MenuItem>
                   <MenuItem value={"groom"}>Groom</MenuItem>
@@ -91,10 +95,8 @@ const Form = () => {
             </Grid>
           </Grid>
           <Grid container xs={12}>
-            <Grid  item xs={4}>
-            <Typography sx={{ m: 2, marginLeft: "20px" }}>
-                Age
-              </Typography>
+            <Grid item xs={4}>
+              <Typography sx={{ m: 2, marginLeft: "20px" }}>Age</Typography>
             </Grid>
             <Grid item xs={3}>
               <FormControl fullWidth>
@@ -198,7 +200,7 @@ const Form = () => {
             <Button sx={{ marginLeft: "30%" }} variant="contained">
               Search
             </Button>
-          </Grid> */}
+          </Grid>
         </Box>
       </Box>
     </>

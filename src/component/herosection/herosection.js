@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Grid } from "@mui/material";
 import herosection from "../../assets/herosection.jpg";
-import Form from "../form/form";
+// import Form from "../form/form";
 const Herosection = () => {
   return (
     <>
@@ -23,9 +23,9 @@ const Herosection = () => {
                 padding:6,
               }}
             >
-              <Box>
+              {/* <Box>
                 <Form />
-              </Box>
+              </Box> */}
             </Container>
           </Box>
         </Grid>
