@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../footer/footer";
-import { Grid, Typography, Button, Icon, Box, Container } from "@mui/material";
+import { Grid, Typography, Button, Icon, Container } from "@mui/material";
 import Image2 from "../../assets/image2.jpg";
 import Image3 from "../../assets/image3.jpg";
 import Image10 from "../../assets/image10.jpg";

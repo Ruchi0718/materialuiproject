@@ -13,9 +13,7 @@ const Header = () => {
   const Pages = ["HOME", "ABOUTUS", "MEMBERSHIP", "CONTACT", "LOGIN", "SEARCH"];
   const [value, setValue] = useState("");
   const theme = useTheme();
-  console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  console.log(isMatch, "fdfsdfsad");
   return (
     <>
       <AppBar sx={{ background: "#FF311A" }}>
