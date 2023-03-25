@@ -46,6 +46,7 @@ const Form = () => {
           justifyContent={"center"}
           sx={{
             padding: 2,
+            margin:"auto",
             marginLeft: { lg: "4%", xs: 0 },
             marginRight: { xs: "4%" },
             // marginTop: "1%",
