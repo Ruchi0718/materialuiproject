@@ -74,14 +74,14 @@ const PageData = () => {
           <img
             // style={{ marginLeft: { lg: "20%", xs: "10%" } }}
             src={Image2}
-            alt="image2"
+            alt="image2" height={"110%"} widht={"90%"}
           />
         </Grid>
         <Grid item p={5} lg={4} sm={6} xs={12}>
           <img
             style={{ marginLeft: { lg: "20%", xs: "10%" } }}
             src={Image3}
-            alt="image3"
+            alt="image3" height="110%" width="80%"
           />
         </Grid>
       </Grid>
@@ -105,7 +105,7 @@ const PageData = () => {
               fontWeight: 600,
               fontSize: "xx-large",
               color: "white",
-              marginLeft: { lg: "40%", xs: "21%" },
+              marginLeft: { lg: "40%", xs: "15%",sm:"30%" },
             }}
           >
             HOWS IT WORKS
@@ -119,15 +119,16 @@ const PageData = () => {
         >
           <Grid item lg={3} sm={6} xs={12}>
             <Icon
-              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "20%" } }}
+              sx={{ marginLeft: { lg: "40%" }, marginRight: { xs: "3%" } }}
             >
               <BorderColorIcon sx={{ color: "white" }} />
             </Icon>
-            <Typography
+            <Typography textAlign={"center"} justifyContent={"center"}
               sx={{
                 color: "white",
                 fontSize: "small",
-                marginRight: { xs: "20%" },
+                // marginRight: { xs: "5%" },
+
               }}
             >
               FREE REGISTRATION
@@ -135,7 +136,7 @@ const PageData = () => {
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
             <Icon
-              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "20%" } }}
+              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "3%" } }}
             >
               <PersonIcon sx={{ color: "white" }} />
             </Icon>
@@ -143,7 +144,7 @@ const PageData = () => {
               sx={{
                 color: "white",
                 fontSize: "small",
-                marginRight: { xs: "20%" },
+                // marginRight: { xs: "5%" },
               }}
             >
               FREE PROFILE & PICTURES
@@ -151,7 +152,7 @@ const PageData = () => {
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
             <Icon
-              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "20%" } }}
+              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "3%" } }}
             >
               <GroupsIcon sx={{ color: "white" }} />
             </Icon>
@@ -159,7 +160,7 @@ const PageData = () => {
               sx={{
                 color: "white",
                 fontSize: "small",
-                marginRight: { xs: "20%" },
+                // marginRight: { xs: "5%" },
               }}
             >
               SEARCH,SHORTLIST & CONTACT
@@ -167,7 +168,7 @@ const PageData = () => {
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
             <Icon
-              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "20%" } }}
+              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "3%" } }}
             >
               <ChatBubbleIcon sx={{ color: "white" }} />
             </Icon>
@@ -175,7 +176,7 @@ const PageData = () => {
               sx={{
                 color: "white",
                 fontSize: "small",
-                marginRight: { xs: "20%" },
+                // marginRight: { xs: "5%" },
               }}
             >
               COMMUNICATE & MOVE AHEAD
