@@ -57,7 +57,7 @@ const Form = () => {
         >
           <Grid container>
             <Grid textAlign={"center"} justifyContent={"center"}
-              ml={{lg:14,xs:7}}
+              ml={{lg:14,xs:7,sm:5,md:6}}
               sx={{
                 fontSize: "xx-large",
                 fontWeight: "bold",
@@ -99,7 +99,7 @@ const Form = () => {
               <Typography sx={{ marginLeft: "20px" }}>Age</Typography>
             </Grid>
             <Grid item xs={3}>
-              <FormControl fullWidth>
+              <FormControl sx={{width:{lg:110,xs:65}}}>
                 <Select
                   // labelId="demo-simple-select-label"
                   // id="demo-simple-select"
@@ -116,7 +116,7 @@ const Form = () => {
               To
             </Grid>
             <Grid ml={2} item xs={3}>
-              <FormControl fullWidth>
+              <FormControl sx={{width:{lg:110,xs:90}}}>
                 <Select value={toage} onChange={handleChangetoAge}>
                   <MenuItem value={10}>25</MenuItem>
                   <MenuItem value={20}>28</MenuItem>
