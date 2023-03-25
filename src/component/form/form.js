@@ -117,7 +117,7 @@ const Form = () => {
               <Typography textAlign={"center"} justifyContent={"center"} sx={{marginLeft:"10%"}}>To</Typography>
             </Grid>
             <Grid ml={3} item xs={3}>
-              <FormControl sx={{width:{lg:114,xs:73}}}>
+              <FormControl sx={{width:{lg:107,xs:73}}}>
                 <Select value={toage} onChange={handleChangetoAge}>
                   <MenuItem value={10}>25</MenuItem>
                   <MenuItem value={20}>28</MenuItem>
