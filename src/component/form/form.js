@@ -49,7 +49,7 @@ const Form = () => {
             marginLeft: { lg: "4%", xs: 0 },
             marginRight: { xs: "4%" },
             // marginTop: "1%",
-            width: { lg: 450 },
+            width: { lg: 450,xs:300 },
             height: { lg: 500 },
             marginTop: 4,
             backgroundColor: "#F8F8F8",
@@ -96,10 +96,10 @@ const Form = () => {
           </Grid>
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ marginLeft: "20px" }}>Age</Typography>
+              <Typography  sx={{ marginLeft: {lg:"20px",xs:"2%"} }}>Age</Typography>
             </Grid>
             <Grid item xs={3}>
-              <FormControl sx={{width:{lg:110,xs:65}}}>
+              <FormControl sx={{width:{lg:110,xs:73}}}>
                 <Select
                   // labelId="demo-simple-select-label"
                   // id="demo-simple-select"
@@ -113,10 +113,10 @@ const Form = () => {
               </FormControl>
             </Grid>
             <Grid item xs={1}>
-              To
+              <Typography textAlign={"center"} justifyContent={"center"} sx={{marginLeft:"10%"}}>To</Typography>
             </Grid>
-            <Grid ml={2} item xs={3}>
-              <FormControl sx={{width:{lg:110,xs:90}}}>
+            <Grid ml={3} item xs={3}>
+              <FormControl sx={{width:{lg:114,xs:73}}}>
                 <Select value={toage} onChange={handleChangetoAge}>
                   <MenuItem value={10}>25</MenuItem>
                   <MenuItem value={20}>28</MenuItem>
@@ -127,7 +127,7 @@ const Form = () => {
           </Grid>
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 1 }}>Religion  </Typography>
+              <Typography  sx={{ marginLeft: {lg:"20px",xs:"2%"} }}>Religion  </Typography>
             </Grid>
             <Grid item xs={6}>
               <FormControl sx={{width:{lg:280,xs:200}}}>
@@ -145,7 +145,7 @@ const Form = () => {
           </Grid>
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 1 }}>Caste  </Typography>
+              <Typography  sx={{ marginLeft: {lg:"20px",xs:"2%"} }}>Caste  </Typography>
             </Grid>
             <Grid item xs={6}>
               <FormControl sx={{width:{lg:280,xs:200}}}>
@@ -159,7 +159,7 @@ const Form = () => {
           </Grid>
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 1 }}>Community </Typography>
+              <Typography  sx={{ marginLeft: {lg:"20px",xs:"2%"} }}>Community </Typography>
             </Grid>
             <Grid item xs={6}>
               <FormControl sx={{width:{lg:280,xs:200}}}>
@@ -177,7 +177,7 @@ const Form = () => {
           </Grid>{" "}
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 1 }}>Country  </Typography>
+              <Typography  sx={{ marginLeft: {lg:"20px",xs:"2%"} }}>Country  </Typography>
             </Grid>
             <Grid item xs={6}>
               <FormControl sx={{width:{lg:280,xs:200}}}>
