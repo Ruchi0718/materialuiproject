@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Grid } from "@mui/material";
 import herosection from "../../assets/herosection.jpg";
-// import Form from "../form/form";
+import Form from "../form/form";
 const Herosection = () => {
   return (
     <>
@@ -11,8 +11,8 @@ const Herosection = () => {
             <Container
               maxWidth={false}
               sx={{
-                width: "100%",
-                height: {lg:700,xs:1000},
+                width: {lg:"100%",xs:"100%"},
+                height: {lg:700,xs:1200},
                 backgroundImage: `url(${herosection})`,
                 backgroundColor: "black",
                 backgroundPosition: "center",
@@ -23,9 +23,9 @@ const Herosection = () => {
                 padding:6,
               }}
             >
-              {/* <Box>
+              <Box>
                 <Form />
-              </Box> */}
+              </Box>
             </Container>
           </Box>
         </Grid>

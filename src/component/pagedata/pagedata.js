@@ -14,18 +14,26 @@ import Herosection from "../herosection/herosection";
 const PageData = () => {
   return (
     <>
-    <Herosection/>
+      <Herosection />
       <Grid container mt={8} spacing={5}>
         <Grid item lg={6} sm={6} xs={12}>
           <Typography
-            sx={{ fontWeight: 600, fontSize: "xx-large", marginLeft: {lg:"30%",xs:"20%"} }}
+            sx={{
+              fontWeight: 600,
+              fontSize: "xx-large",
+              marginLeft: { lg: "30%", xs: "30%" },
+            }}
           >
             WELCOME
           </Typography>
         </Grid>
         <Grid item lg={6} sm={6} xs={12}>
           <Typography
-            sx={{ fontWeight: 600, fontSize: "xx-large", marginLeft: "30%" }}
+            sx={{
+              fontWeight: 600,
+              fontSize: "xx-large",
+              marginLeft: { lg: "30%", xs: "30%" },
+            }}
           >
             VIDEOS
           </Typography>
@@ -37,8 +45,8 @@ const PageData = () => {
           <Typography
             sx={{
               marginLeft: "10%",
-              // textAlign: "justify",
-              // textJustify: "inter-word",
+              textAlign: "justify",
+              textJustify: "inter-word",
               // marginLeft: "10px",
             }}
           >
@@ -62,17 +70,25 @@ const PageData = () => {
           </Button>
         </Grid>
         <Grid item lg={4} sm={6} xs={12}>
-          <img style={{ marginLeft: "20%" }} src={Image2} alt="image2" />
+          <img
+            style={{ marginLeft: { lg: "20%", xs: "10%" } }}
+            src={Image2}
+            alt="image2"
+          />
         </Grid>
         <Grid item lg={4} sm={6} xs={12}>
-          <img style={{ marginLeft: "20%" }} src={Image3} alt="image3" />
+          <img
+            style={{ marginLeft: { lg: "20%", xs: "10%" } }}
+            src={Image3}
+            alt="image3"
+          />
         </Grid>
       </Grid>
 
       <Container
         maxWidth={false}
         sx={{
-          height: { xs: 350, lg: 250 },
+          height: { xs: 350, lg: 250, sm: 300, md: 230 },
           width: { xs: "100%", sm: "100%", md: "100%", lg: "100%" },
           background: "#FF311A",
 
@@ -82,11 +98,13 @@ const PageData = () => {
       >
         <Grid m={2} container lg={12} sm={12} xs={12} md={12}>
           <Typography
+            alignItems={"center"}
+            justifyContent={"center"}
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
               color: "white",
-              marginLeft: "40%",
+              marginLeft: { lg: "40%", xs: "21%" },
             }}
           >
             HOWS IT WORKS
@@ -95,40 +113,70 @@ const PageData = () => {
 
         <Grid
           container
-          m={6}
+          // m={6}
           sx={{ textAlign: { xs: "center", lg: "justify" } }}
         >
           <Grid item lg={3} sm={6} xs={12}>
-            <Icon sx={{ marginLeft: "10%" }}>
+            <Icon
+              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "20%" } }}
+            >
               <BorderColorIcon sx={{ color: "white" }} />
             </Icon>
             <Typography
-              sx={{ color: "white", fontSize: "small", paddingLeft: 5 }}
+              sx={{
+                color: "white",
+                fontSize: "small",
+                marginRight: { xs: "20%" },
+              }}
             >
               FREE REGISTRATION
             </Typography>
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
-            <Icon>
+            <Icon
+              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "20%" } }}
+            >
               <PersonIcon sx={{ color: "white" }} />
             </Icon>
-            <Typography sx={{ color: "white", fontSize: "small" }}>
+            <Typography
+              sx={{
+                color: "white",
+                fontSize: "small",
+                marginRight: { xs: "20%" },
+              }}
+            >
               FREE PROFILE & PICTURES
             </Typography>
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
-            <Icon>
+            <Icon
+              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "20%" } }}
+            >
               <GroupsIcon sx={{ color: "white" }} />
             </Icon>
-            <Typography sx={{ color: "white", fontSize: "small" }}>
+            <Typography
+              sx={{
+                color: "white",
+                fontSize: "small",
+                marginRight: { xs: "20%" },
+              }}
+            >
               SEARCH,SHORTLIST & CONTACT
             </Typography>
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
-            <Icon>
+            <Icon
+              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "20%" } }}
+            >
               <ChatBubbleIcon sx={{ color: "white" }} />
             </Icon>
-            <Typography sx={{ color: "white", fontSize: "small" }}>
+            <Typography
+              sx={{
+                color: "white",
+                fontSize: "small",
+                marginRight: { xs: "20%" },
+              }}
+            >
               COMMUNICATE & MOVE AHEAD
             </Typography>
           </Grid>
@@ -142,11 +190,14 @@ const PageData = () => {
           // padding: { lg: 5, md: 10, sm: 20, xs: 25 },
           marginTop: { lg: "20%", xs: "95%", md: "30%" },
           height: 300,
+          p: 3,
         }}
       >
         <Grid container>
           <Grid item lg={12} sm={12} xs={12} md={12}>
             <Typography
+              alignItems={"center"}
+              justifyContent={"center"}
               sx={{
                 fontWeight: 600,
                 fontSize: "xx-large",
@@ -186,17 +237,19 @@ const PageData = () => {
         maxWidth={false}
         sx={{
           background: "#F8F8F8",
-          height: { lg: 350, xs: 430 },
+          height: { lg: 360, xs: 450 },
           width: "100%",
         }}
       >
         <Grid m={2} container lg={12} sm={12} xs={12} md={12}>
           <Typography
+            textAlign={"center"}
+            justifyContent={"center"}
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
               color: "black",
-              marginLeft: "35%",
+              marginLeft: { lg: "35%", xs: "10%" },
             }}
           >
             ANNOUNCEMENT
@@ -222,7 +275,7 @@ const PageData = () => {
           </Button>
         </Grid>
       </Container>
-      <Grid m={10} container>
+      <Grid m={4} sx={{marginLeft:{xs:"20%",lg:"5%"}}} container>
         <Grid item lg={4} sm={6} xs={12}>
           <img src={Image10} alt="image10" />
         </Grid>
@@ -233,7 +286,7 @@ const PageData = () => {
           <img src={Image12} alt="image12" />
         </Grid>
       </Grid>
-      <Footer/>
+      <Footer />
     </>
   );
 };
