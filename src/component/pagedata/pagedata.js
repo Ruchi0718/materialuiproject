@@ -45,8 +45,9 @@ const PageData = () => {
           <Typography
             sx={{
               marginLeft: "10%",
+              p:3,
               textAlign: "justify",
-              textJustify: "inter-word",
+              // textJustify: "inter-word",
               // marginLeft: "10px",
             }}
           >
@@ -69,14 +70,14 @@ const PageData = () => {
             More
           </Button>
         </Grid>
-        <Grid item lg={4} sm={6} xs={12}>
+        <Grid item  p={5}lg={4} sm={6} xs={12}>
           <img
-            style={{ marginLeft: { lg: "20%", xs: "10%" } }}
+            // style={{ marginLeft: { lg: "20%", xs: "10%" } }}
             src={Image2}
             alt="image2"
           />
         </Grid>
-        <Grid item lg={4} sm={6} xs={12}>
+        <Grid item p={5} lg={4} sm={6} xs={12}>
           <img
             style={{ marginLeft: { lg: "20%", xs: "10%" } }}
             src={Image3}
@@ -259,7 +260,7 @@ const PageData = () => {
           <Grid ml={10} item xs={3}>
             <img src={Image2} alt="image2" />
           </Grid>
-          <Grid m={5} item>
+          <Grid m={5} item lg={6} xs={12}>
             <Typography>ATTN: LAUNCH OF NEW MATRIMONY LAYOUT</Typography>
             <Typography sx={{ alignItems: "justify" }}>
               We pleased to announce new version
