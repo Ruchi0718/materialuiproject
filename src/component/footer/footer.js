@@ -19,16 +19,18 @@ const Footer = () => {
           backgroundColor: "#E8E8E8",
         }}
       >
-        <Grid m={5} container>
+        <Grid p={1} container>
           <Grid item lg={3} sm={6} xs={12}>
-            <Typography sx={{ fontWeight: "bold", marginLeft: {lg:"15%",xs:"9%"} }}>
+            <Typography
+              sx={{ fontWeight: "bold", marginLeft: { lg: "15%", xs: "6%" } }}
+            >
               Our Links
             </Typography>
             <Grid
               sx={{
                 // textAlign: "justify",
                 // textJustify: "inter",
-                marginLeft: "60px",
+                marginLeft: { lg: "15%", xs: "9%" },
               }}
               item
               lg={3}
@@ -50,7 +52,7 @@ const Footer = () => {
               sx={{
                 textAlign: "justify",
                 textJustify: "inter",
-                marginLeft: "20px",
+                marginLeft: { lg: "7%", xs: "9%" },
               }}
               item
               lg={3}
@@ -64,16 +66,22 @@ const Footer = () => {
             </Grid>
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
-            <Typography sx={{ fontWeight: "bold" }}>Contact Info</Typography>
+            <Typography sx={{ fontWeight: "bold", marginLeft: "6%" }}>
+              Contact Info
+            </Typography>
             <Grid
-              sx={{ textAlign: "justify", textJustify: "inter" }}
+              sx={{
+                textAlign: "justify",
+                textJustify: "inter",
+                marginLeft: { lg: "7%", xs: "9%" },
+              }}
               item
               lg={3}
               sm={6}
               xs={12}
             >
               <Icon>
-                <AddLocationIcon />  
+                <AddLocationIcon />
               </Icon>
               Aura IT solution sector 4
               <Grid>
@@ -91,8 +99,18 @@ const Footer = () => {
             </Grid>
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
-            <Typography sx={{ fontWeight: "bold" }}>Follow Us</Typography>
-            <Grid item lg={3} sm={6} xs={12}>
+            <Typography sx={{ fontWeight: "bold", marginLeft: "6%" }}>
+              Follow Us
+            </Typography>
+            <Grid
+              item
+              lg={3}
+              sm={6}
+              xs={12}
+              sx={{
+                marginLeft: { lg: "7%", xs: "9%" },
+              }}
+            >
               <Icon>
                 <FacebookIcon />
               </Icon>
@@ -111,7 +129,9 @@ const Footer = () => {
 
         <hr></hr>
         <Grid container xs={12}>
-          <Typography sx={{ marginLeft: {lg:"40%",xs:"5%"}, fontWeight: "bold" }}>
+          <Typography
+            sx={{ marginLeft: { lg: "40%", xs: "5%" }, fontWeight: "bold" }}
+          >
             Website Design by makeyoursoftware.com
           </Typography>
         </Grid>
