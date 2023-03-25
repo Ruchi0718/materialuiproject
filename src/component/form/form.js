@@ -56,8 +56,8 @@ const Form = () => {
           }}
         >
           <Grid container>
-            <Grid
-              ml={14}
+            <Grid textAlign={"center"} justifyContent={"center"}
+              ml={{lg:14,xs:7}}
               sx={{
                 fontSize: "xx-large",
                 fontWeight: "bold",
@@ -68,7 +68,7 @@ const Form = () => {
             >
               SEARCH
             </Grid>
-            <Grid
+            <Grid textAlign={"center"} justifyContent={"center"} ml={{lg:1,xs:5}}
               sx={{ fontSize: "xx-large", fontWeight: "bold", color: "grey" }}
               item
               xs={3}
@@ -76,17 +76,17 @@ const Form = () => {
               HERE
             </Grid>
           </Grid>
-          <Typography sx={{ marginLeft: "70%" }}>
+          <Typography sx={{ marginLeft: {lg:"70%",xs:"40%"} }}>
             <u>Profile ID Search</u>
           </Typography>
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 2, marginLeft: "20px" }}>
-                Looking for :{" "}
+              <Typography sx={{ marginLeft: {lg:"20px",xs:"2%"} }}>
+                Looking for {" "}
               </Typography>
             </Grid>
             <Grid item xs={6}>
-              <FormControl sx={{ lg:280,xs:200,sm:200,md:200 }}>
+              <FormControl sx={{width:{lg:280,xs:200}}}>
                 <Select fullWidth value={lookingFor} onChange={handleChange}>
                   <MenuItem value={"bride"}>Bride</MenuItem>
                   <MenuItem value={"groom"}>Groom</MenuItem>
@@ -96,13 +96,13 @@ const Form = () => {
           </Grid>
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 2, marginLeft: "20px" }}>Age</Typography>
+              <Typography sx={{ marginLeft: "20px" }}>Age</Typography>
             </Grid>
             <Grid item xs={3}>
               <FormControl fullWidth>
                 <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
+                  // labelId="demo-simple-select-label"
+                  // id="demo-simple-select"
                   value={age}
                   onChange={handleChangeAge}
                 >
@@ -127,10 +127,10 @@ const Form = () => {
           </Grid>
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 1 }}>Religion : </Typography>
+              <Typography sx={{ m: 1 }}>Religion  </Typography>
             </Grid>
             <Grid item xs={6}>
-              <FormControl sx={{ width: 280 }}>
+              <FormControl sx={{width:{lg:280,xs:200}}}>
                 <Select
                   fullWidth
                   value={religion}
@@ -145,10 +145,10 @@ const Form = () => {
           </Grid>
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 1 }}>Caste : </Typography>
+              <Typography sx={{ m: 1 }}>Caste  </Typography>
             </Grid>
             <Grid item xs={6}>
-              <FormControl sx={{ width: 280 }}>
+              <FormControl sx={{width:{lg:280,xs:200}}}>
                 <Select fullWidth value={caste} onChange={handleChangeCaste}>
                   <MenuItem value={"general"}>General</MenuItem>
                   <MenuItem value={"obc"}>Obc</MenuItem>
@@ -159,10 +159,10 @@ const Form = () => {
           </Grid>
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 1 }}>Community: </Typography>
+              <Typography sx={{ m: 1 }}>Community </Typography>
             </Grid>
             <Grid item xs={6}>
-              <FormControl sx={{ width: 280 }}>
+              <FormControl sx={{width:{lg:280,xs:200}}}>
                 <Select
                   fullWidth
                   value={community}
@@ -177,10 +177,10 @@ const Form = () => {
           </Grid>{" "}
           <Grid container xs={12}>
             <Grid item xs={4}>
-              <Typography sx={{ m: 1 }}>Country : </Typography>
+              <Typography sx={{ m: 1 }}>Country  </Typography>
             </Grid>
             <Grid item xs={6}>
-              <FormControl sx={{ width: 280 }}>
+              <FormControl sx={{width:{lg:280,xs:200}}}>
                 <Select
                   fullWidth
                   value={country}
