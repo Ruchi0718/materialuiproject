@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../footer/footer";
-import { Grid, Typography, Button, Icon, Container } from "@mui/material";
+import { Grid, Typography, Button, Icon, Container, Box } from "@mui/material";
 import Image2 from "../../assets/image2.jpg";
 import Image3 from "../../assets/image3.jpg";
 import Image10 from "../../assets/image10.jpg";
@@ -18,10 +18,11 @@ const PageData = () => {
       <Grid container mt={8} spacing={5}>
         <Grid item lg={6} sm={6} xs={12}>
           <Typography
+            align="center"
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
-              marginLeft: { lg: "30%", xs: "30%" },
+              // marginLeft: { lg: "30%", xs: "30%" },
             }}
           >
             WELCOME
@@ -29,10 +30,11 @@ const PageData = () => {
         </Grid>
         <Grid item lg={6} sm={6} xs={12}>
           <Typography
+            align="center"
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
-              marginLeft: { lg: "30%", xs: "30%" },
+              // marginLeft: { lg: "30%", xs: "30%" },
             }}
           >
             VIDEOS
@@ -43,9 +45,10 @@ const PageData = () => {
       <Grid container xs={12}>
         <Grid item lg={4} sm={6} xs={12}>
           <Typography
+            align="center"
             sx={{
-              marginLeft: "10%",
-              p:3,
+              // marginLeft: "10%",
+              p: 3,
               textAlign: "justify",
               // textJustify: "inter-word",
               // marginLeft: "10px",
@@ -57,12 +60,13 @@ const PageData = () => {
             any feedback please feel free to get back to us.visit us on{" "}
             <u>https://www.makeyoursoftware.com</u>
           </Typography>
+
           <Button
             sx={{
               float: "left",
               background: "grey",
               margin: 2,
-              marginLeft: "10%",
+              marginLeft: "5%",
             }}
             variant="contained"
           >
@@ -70,19 +74,27 @@ const PageData = () => {
             More
           </Button>
         </Grid>
-        <Grid item  p={5}lg={4} sm={6} xs={12}>
-          <img
-            // style={{ marginLeft: { lg: "20%", xs: "10%" } }}
-            src={Image2}
-            alt="image2" height={"110%"} widht={"90%"}
-          />
+        <Grid item p={5} lg={4} sm={6} xs={12}>
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <img
+              // style={{ marginLeft: { lg: "20%", xs: "10%" } }}
+              src={Image2}
+              alt="image2"
+              height={"110%"}
+              widht={"90%"}
+            />
+          </Box>
         </Grid>
         <Grid item p={5} lg={4} sm={6} xs={12}>
-          <img
-            style={{ marginLeft: { lg: "20%", xs: "10%" } }}
-            src={Image3}
-            alt="image3" height="110%" width="80%"
-          />
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <img
+              style={{ marginLeft: { lg: "20%", xs: "10%" } }}
+              src={Image3}
+              alt="image3"
+              height="110%"
+              width="80%"
+            />
+          </Box>
         </Grid>
       </Grid>
 
@@ -99,13 +111,12 @@ const PageData = () => {
       >
         <Grid m={2} container lg={12} sm={12} xs={12} md={12}>
           <Typography
-            alignItems={"center"}
-            justifyContent={"center"}
+        align="center"
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
               color: "white",
-              marginLeft: { lg: "40%", xs: "15%",sm:"30%" },
+              marginLeft: { lg: "40%", xs: "15%", sm: "30%" },
             }}
           >
             HOWS IT WORKS
@@ -118,26 +129,24 @@ const PageData = () => {
           sx={{ textAlign: { xs: "center", lg: "justify" } }}
         >
           <Grid item lg={3} sm={6} xs={12}>
-            <Icon
-              sx={{ marginLeft: { lg: "40%" }, marginRight: { xs: "3%" } }}
-            >
+            <Icon sx={{ marginLeft: { lg: "40%" }, marginRight: { xs: "3%" } }}>
               <BorderColorIcon sx={{ color: "white" }} />
             </Icon>
-            <Typography textAlign={"center"} justifyContent={"center"}
+            <Typography
+            // align="center"
+              textAlign={"center"}
+              justifyContent={"center"}
               sx={{
                 color: "white",
                 fontSize: "small",
                 // marginRight: { xs: "5%" },
-
               }}
             >
               FREE REGISTRATION
             </Typography>
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
-            <Icon
-              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "3%" } }}
-            >
+            <Icon sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "3%" } }}>
               <PersonIcon sx={{ color: "white" }} />
             </Icon>
             <Typography
@@ -151,9 +160,7 @@ const PageData = () => {
             </Typography>
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
-            <Icon
-              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "3%" } }}
-            >
+            <Icon sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "3%" } }}>
               <GroupsIcon sx={{ color: "white" }} />
             </Icon>
             <Typography
@@ -167,9 +174,7 @@ const PageData = () => {
             </Typography>
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
-            <Icon
-              sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "3%" } }}
-            >
+            <Icon sx={{ marginLeft: { lg: "10%" }, marginRight: { xs: "3%" } }}>
               <ChatBubbleIcon sx={{ color: "white" }} />
             </Icon>
             <Typography
@@ -198,12 +203,13 @@ const PageData = () => {
         <Grid container>
           <Grid item lg={12} sm={12} xs={12} md={12}>
             <Typography
-              alignItems={"center"}
-              justifyContent={"center"}
+            align="center"
+              // alignItems={"center"}
+              // justifyContent={"center"}
               sx={{
                 fontWeight: 600,
                 fontSize: "xx-large",
-                marginLeft: "38%",
+                // marginLeft: "38%",
                 marginTop: { lg: "1%", md: "2%" },
               }}
             >
@@ -214,9 +220,7 @@ const PageData = () => {
             <Typography
               sx={{
                 marginLeft: "10%",
-                // textAlign: {xs:"justify",lg:"justify",md:"justify",sm:"justify"},
-                // textJustify: "inter-word",
-                // marginLeft: "150px",
+           
               }}
             >
               Watch out this space it would be loaded with happy customers
@@ -235,6 +239,12 @@ const PageData = () => {
         </Grid>
         <br></br>
       </Container>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
       <Container
         maxWidth={false}
         sx={{
@@ -245,13 +255,16 @@ const PageData = () => {
       >
         <Grid m={2} container lg={12} sm={12} xs={12} md={12}>
           <Typography
-            textAlign={"center"}
-            justifyContent={"center"}
+          align="center"
+         
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
               color: "black",
-              marginLeft: { lg: "35%", xs: "10%" },
+              alignItems:"center",
+              // marginLeft: { lg: "35%", xs:"15%"},
+              margin:"auto"
+
             }}
           >
             ANNOUNCEMENT
@@ -277,8 +290,10 @@ const PageData = () => {
           </Button>
         </Grid>
       </Container>
-      <Grid m={4} sx={{marginLeft:{xs:"20%",lg:"5%"}}} container>
+      <Grid    m={2} sx={{ marginLeft: { xs: "25%", lg: "5%" } ,margin:"auto"}} container>
         <Grid item lg={4} sm={6} xs={12}>
+        
+
           <img src={Image10} alt="image10" />
         </Grid>
         <Grid item lg={4} sm={6} xs={12}>
