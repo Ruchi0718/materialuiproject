@@ -290,7 +290,7 @@ const PageData = () => {
           </Button>
         </Grid>
       </Container>
-      <Grid    m={2} sx={{ marginLeft: { xs: "30%", lg: "10%" } ,margin:"auto"}} container>
+      <Grid    m={2} sx={{ marginLeft: { xs: "25%", lg: "10%",sm:"15%" } ,margin:"auto"}} container>
         <Grid item lg={4} sm={6} xs={12}>
         
 

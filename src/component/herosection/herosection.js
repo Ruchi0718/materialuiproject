@@ -9,9 +9,6 @@ const Herosection = () => {
         <Grid item lg={12} xs={12} sm={12} md={12}>
           <Box>
             <Container
-            
-            // spacing={0}
-            // m={"auto"}
               maxWidth={false}
               sx={{
                 width: { lg: "100%", xs: "100%" },
@@ -23,11 +20,20 @@ const Herosection = () => {
                 backgroundRepeat: "no-repeat",
                 diplay: "flex",
                 justifyContent: "center",
-                alignItems:"center",
-                padding: 7,  
+                alignItems: "center",
+                padding: 7,
               }}
             >
-              <FormGroup sx={{ alignContent:{xs:"center",sm:"center",md:"flex-start"}, marginTop: "10%"}}>
+              <FormGroup
+                sx={{
+                  alignContent: {
+                    xs: "center",
+                    sm: "center",
+                    md: "flex-start",
+                  },
+                  marginTop: { lg: "10%", xs: "30%", sm: "30%" },
+                }}
+              >
                 <Form />
               </FormGroup>
             </Container>
