@@ -27,7 +27,7 @@ const Herosection = () => {
                 padding: 7,  
               }}
             >
-              <FormGroup sx={{ marginTop: "10%"}}>
+              <FormGroup sx={{ alignContent:{xs:"center",sm:"center",md:"flex-start"}, marginTop: "10%"}}>
                 <Form />
               </FormGroup>
             </Container>

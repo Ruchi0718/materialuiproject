@@ -39,7 +39,7 @@ const Form = () => {
     setCountry(event.target.value);
   };
   return (
-    <>
+
       <Box sx={{ height: 620 }}>
         <Container>
           <Box
@@ -225,7 +225,7 @@ const Form = () => {
           </Box>
         </Container>
       </Box>
-    </>
+
   );
 };
 
