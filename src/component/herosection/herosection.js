@@ -9,8 +9,9 @@ const Herosection = () => {
         <Grid item lg={12} xs={12} sm={12} md={12}>
           <Box>
             <Container
-            spacing={0}
-            m={"auto"}
+            
+            // spacing={0}
+            // m={"auto"}
               maxWidth={false}
               sx={{
                 width: { lg: "100%", xs: "100%" },

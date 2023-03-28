@@ -41,15 +41,16 @@ const Form = () => {
   return (
     <>
       <Box sx={{ height: 620 }}>
-        <Container fixed>
+        <Container>
           <Box
             display="flex"
             flexDirection={"column"}
-            alignItems={{ lg: "center", xs: "justify" }}
+            alignItems={{ lg: "center", xs: "center" }}
             justifyContent={"center"}
             sx={{
+              // border: "2px solid red",
               padding: 2,
-
+              // margin: "auto",
               width: { lg: 450, xs: 330 },
               height: { lg: 550 },
               marginTop: 4,
@@ -102,7 +103,6 @@ const Form = () => {
                 </FormControl>
               </Grid>
             </Grid>
-         
             <Grid m={1} container xs={12}>
               <Grid item xs={4}>
                 <Typography align="center">Age</Typography>
