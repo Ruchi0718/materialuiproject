@@ -22,7 +22,6 @@ const PageData = () => {
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
-              // marginLeft: { lg: "30%", xs: "30%" },
             }}
           >
             WELCOME
@@ -34,7 +33,6 @@ const PageData = () => {
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
-              // marginLeft: { lg: "30%", xs: "30%" },
             }}
           >
             VIDEOS
@@ -47,11 +45,8 @@ const PageData = () => {
           <Typography
             align="center"
             sx={{
-              // marginLeft: "10%",
               p: 3,
               textAlign: "justify",
-              // textJustify: "inter-word",
-              // marginLeft: "10px",
             }}
           >
             Make your Software.com presents new free matrimonial website designs
@@ -111,7 +106,7 @@ const PageData = () => {
       >
         <Grid m={2} container lg={12} sm={12} xs={12} md={12}>
           <Typography
-        align="center"
+            align="center"
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
@@ -133,7 +128,6 @@ const PageData = () => {
               <BorderColorIcon sx={{ color: "white" }} />
             </Icon>
             <Typography
-            // align="center"
               textAlign={"center"}
               justifyContent={"center"}
               sx={{
@@ -153,7 +147,6 @@ const PageData = () => {
               sx={{
                 color: "white",
                 fontSize: "small",
-                // marginRight: { xs: "5%" },
               }}
             >
               FREE PROFILE & PICTURES
@@ -167,7 +160,6 @@ const PageData = () => {
               sx={{
                 color: "white",
                 fontSize: "small",
-                // marginRight: { xs: "5%" },
               }}
             >
               SEARCH,SHORTLIST & CONTACT
@@ -193,8 +185,6 @@ const PageData = () => {
       <Container
         maxWidth={false}
         sx={{
-          // margin:6,
-          // padding: { lg: 5, md: 10, sm: 20, xs: 25 },
           marginTop: { lg: "20%", xs: "95%", md: "30%" },
           height: 300,
           p: 3,
@@ -203,13 +193,10 @@ const PageData = () => {
         <Grid container>
           <Grid item lg={12} sm={12} xs={12} md={12}>
             <Typography
-            align="center"
-              // alignItems={"center"}
-              // justifyContent={"center"}
+              align="center"
               sx={{
                 fontWeight: 600,
                 fontSize: "xx-large",
-                // marginLeft: "38%",
                 marginTop: { lg: "1%", md: "2%" },
               }}
             >
@@ -220,7 +207,6 @@ const PageData = () => {
             <Typography
               sx={{
                 marginLeft: "10%",
-           
               }}
             >
               Watch out this space it would be loaded with happy customers
@@ -255,16 +241,13 @@ const PageData = () => {
       >
         <Grid m={2} container lg={12} sm={12} xs={12} md={12}>
           <Typography
-          align="center"
-         
+            align="center"
             sx={{
               fontWeight: 600,
               fontSize: "xx-large",
               color: "black",
-              alignItems:"center",
-              // marginLeft: { lg: "35%", xs:"15%"},
-              margin:"auto"
-
+              alignItems: "center",
+              margin: "auto",
             }}
           >
             ANNOUNCEMENT
@@ -290,10 +273,12 @@ const PageData = () => {
           </Button>
         </Grid>
       </Container>
-      <Grid    m={2} sx={{ marginLeft: { xs: "25%", lg: "10%",sm:"15%" } ,margin:"auto"}} container>
+      <Grid
+        m={2}
+        sx={{ marginLeft: { xs: "25%", lg: "10%", sm: "15%" }, margin: "auto" }}
+        container
+      >
         <Grid item lg={4} sm={6} xs={12}>
-        
-
           <img src={Image10} alt="image10" />
         </Grid>
         <Grid item lg={4} sm={6} xs={12}>
