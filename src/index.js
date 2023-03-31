@@ -4,7 +4,6 @@ import "./index.css";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-import Home from "./pages/home/home";
 import Aboutus from "./pages/aboutus/aboutus";
 
 
@@ -16,8 +15,8 @@ root.render(
       <React.StrictMode>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/aboutus" element={<Aboutus />} />
+            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Aboutus />} />
           </Routes>
         </BrowserRouter>
       </React.StrictMode>
