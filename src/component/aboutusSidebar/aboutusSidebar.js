@@ -2,6 +2,7 @@ import React from "react";
 import {
   Box,
   Grid,
+  Button,
   IconButton,
   Typography,
   Icon,
@@ -13,8 +14,8 @@ import {
   InputLabel,
   Select,
   MenuItem,
+  TextField,
 } from "@mui/material";
-
 import TuneIcon from "@mui/icons-material/Tune";
 
 const AboutusSidebar = () => {
@@ -31,10 +32,10 @@ const AboutusSidebar = () => {
             sx={{
               marginTop: { lg: "5%", xs: "5%", sm: "5%", md: "5%" },
               margin: "auto",
-              width: { lg: "70%", xs: "100%", sm: "100%",md:"80%"},
-              height: "70rem",
+              width: { lg: "70%", xs: "6rem", sm: "100%", md: "80%" },
+              height: { lg: "99%" },
               border: "2px solid #C0C0C0",
-              borderRadius: "10px",
+              borderRadius: "4px",
             }}
           >
             <Grid container>
@@ -54,7 +55,7 @@ const AboutusSidebar = () => {
             </Grid>
             <Divider />
 
-            <Grid container >
+            <Grid container>
               <Grid item m={1}>
                 <Typography sx={{ fontSize: "15px", color: "grey" }}>
                   Looking For
@@ -71,7 +72,11 @@ const AboutusSidebar = () => {
                     defaultValue="top"
                   >
                     <FormControlLabel
-                      sx={{ fontWeight: "10px", margin: "auto" }}
+                      sx={{
+                        fontWeight: "10px",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                      }}
                       value="Bride"
                       control={<Radio />}
                       label="Bride"
@@ -89,7 +94,11 @@ const AboutusSidebar = () => {
                     defaultValue="top"
                   >
                     <FormControlLabel
-                      sx={{ fontWeight: "10px", margin: "auto" }}
+                      sx={{
+                        fontWeight: "10px",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                      }}
                       value="Groom"
                       control={<Radio />}
                       label="Groom"
@@ -101,14 +110,59 @@ const AboutusSidebar = () => {
 
               <Grid container>
                 <Grid item m={1}>
-                  <Typography sx={{ fontSize: "15px", color: "grey" }}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      color: "grey",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                    }}
+                  >
                     Age
                   </Typography>
                 </Grid>
               </Grid>
-              <Grid container >
-                <Grid item  lg={5} xs={12}>
-                  <FormControl sx={{ minWidth: 80,marginLeft:"5%" }}>
+              <Grid container>
+                <Grid item p={1} lg={5} xs={12} md={12}>
+                  <FormControl sx={{ minWidth: 80 }} size="small">
+                    <InputLabel id="demo-simple-select-autowidth-label">
+                      Age
+                    </InputLabel>
+                    <Select
+                      // sx={{marginLeft:"auto",marginRight:"auto" }}
+                      labelId="demo-simple-select-autowidth-label"
+                      id="demo-simple-select-autowidth"
+                      value={age}
+                      onChange={handleChange}
+                      autoWidth
+                      label="Age"
+                    >
+                      <MenuItem value="">
+                        <em>None</em>
+                      </MenuItem>
+                      <MenuItem value={10}>22</MenuItem>
+                      <MenuItem value={21}>25</MenuItem>
+                      <MenuItem value={22}>30</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Grid>
+                <Grid item p={1} lg={2} xs={12}>
+                  <Typography align="center" justifyContent={"center"}>
+                    To
+                  </Typography>
+                </Grid>
+                <Grid
+                  item
+                  sx={{
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    alignContent: "center",
+                  }}
+                  p={1}
+                  lg={5}
+                  xs={12}
+                >
+                  <FormControl sx={{ minWidth: 80 }} size="small">
                     <InputLabel id="demo-simple-select-autowidth-label">
                       Age
                     </InputLabel>
@@ -129,53 +183,483 @@ const AboutusSidebar = () => {
                     </Select>
                   </FormControl>
                 </Grid>
-                <Grid item lg={2} xs={2}>
-                  <Typography align="center" justifyContent={"center"}>To</Typography>
+              </Grid>
+              <Grid container>
+                <Grid
+                  item
+                  sx={{
+                    alignContent: {
+                      xs: "center",
+                      sm: "center",
+                      md: "flex-start",
+                    },
+                  }}
+                  lg={12}
+                  xs={12}
+                  md={12}
+                >
+                  <Typography
+                    sx={{
+                      fontWeight: "bold",
+                      alignContent: {
+                        xs: "center",
+                        sm: "center",
+                        md: "flex-start",
+                      },
+                    }}
+                  >
+                    <u>Advanced Search</u>
+                  </Typography>
                 </Grid>
-                <Grid item lg={5} xs={12}>
-                  <FormControl sx={{ minWidth: 80,marginLeft:"5%" }}>
-                    <InputLabel id="demo-simple-select-autowidth-label">
-                      Age
-                    </InputLabel>
-                    <Select
-                      labelId="demo-simple-select-autowidth-label"
-                      id="demo-simple-select-autowidth"
-                      value={age}
-                      onChange={handleChange}
-                      autoWidth
-                      label="Age"
+              </Grid>
+            </Grid>
+            <Grid container>
+              <Grid item m={1}>
+                <Typography
+                  sx={{
+                    fontSize: "15px",
+                    color: "grey",
+                    fontWeight: "bold",
+
+                    alignItems: { lg: "justify", xs: "center", sm: "center" },
+                  }}
+                >
+                  Members ID
+                </Typography>
+              </Grid>
+              <Grid container>
+                <Grid item m={1}>
+                  <TextField
+                    id="outlined-basic"
+                    size="small"
+                    label="Enter the Id"
+                    variant="outlined"
+                  />
+                </Grid>
+              </Grid>
+              <Grid container>
+                <Grid item m={1}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      color: "grey",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Material Status
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item m={1} lg={12} xs={12}>
+                <FormControl
+                  sx={{ minWidth: { lg: 220, xs: 80, sm: 160, md: 160 } }}
+                  size="small"
+                >
+                  <InputLabel id="demo-simple-select-autowidth-label">
+                    Select One
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-autowidth-label"
+                    id="demo-simple-select-autowidth"
+                    // value={age}
+                    // onChange={handleChange}
+                    autoWidth
+                    label="Select One"
+                  >
+                    <MenuItem value="">
+                      <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={10}>22</MenuItem>
+                    <MenuItem value={21}>25</MenuItem>
+                    <MenuItem value={22}>30</MenuItem>
+                  </Select>
+                </FormControl>
+              </Grid>
+
+              <Grid container>
+                <Grid item m={1}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      color: "grey",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Religion
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid
+                item
+                m={1}
+                sx={
+                  {
+                    // dispaly:"flex",
+                    // flexDirection:"row",
+                  }
+                }
+                lg={12}
+                xs={12}
+              >
+                <FormControl
+                  sx={{ minWidth: { lg: 220, xs: 80, sm: 160, md: 160 } }}
+                  size="small"
+                >
+                  <InputLabel id="demo-simple-select-autowidth-label">
+                    Select One
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-autowidth-label"
+                    id="demo-simple-select-autowidth"
+                    // value={age}
+                    // onChange={handleChange}
+                    autoWidth
+                    label="Select One"
+                  >
+                    <MenuItem value="">
+                      <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={10}>22</MenuItem>
+                    <MenuItem value={21}>25</MenuItem>
+                    <MenuItem value={22}>30</MenuItem>
+                  </Select>
+                </FormControl>
+              </Grid>
+
+              <Grid container>
+                <Grid item m={1}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      color: "grey",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Caste
+                  </Typography>
+                </Grid>
+              </Grid>
+
+              <Grid
+                item
+                m={1}
+                sx={
+                  {
+                    // dispaly:"flex",
+                    // flexDirection:"row",
+                  }
+                }
+                lg={12}
+                xs={12}
+              >
+                <FormControl
+                  sx={{ minWidth: { lg: 220, xs: 80, sm: 160, md: 160 } }}
+                  size="small"
+                >
+                  <InputLabel id="demo-simple-select-autowidth-label">
+                    Select One
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-autowidth-label"
+                    id="demo-simple-select-autowidth"
+                    // value={age}
+                    // onChange={handleChange}
+                    autoWidth
+                    label="Select One"
+                  >
+                    <MenuItem value="">
+                      <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={10}>22</MenuItem>
+                    <MenuItem value={21}>25</MenuItem>
+                    <MenuItem value={22}>30</MenuItem>
+                  </Select>
+                </FormControl>
+              </Grid>
+
+              <Grid container>
+                <Grid item m={1}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      color: "grey",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Sub Caste
+                  </Typography>
+                </Grid>
+              </Grid>
+
+              <Grid
+                item
+                m={1}
+                sx={
+                  {
+                    // dispaly:"flex",
+                    // flexDirection:"row",
+                  }
+                }
+                lg={12}
+                xs={12}
+              >
+                <FormControl
+                  sx={{ minWidth: { lg: 220, xs: 80, sm: 160, md: 160 } }}
+                  size="small"
+                >
+                  <InputLabel id="demo-simple-select-autowidth-label">
+                    Select One
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-autowidth-label"
+                    id="demo-simple-select-autowidth"
+                    // value={age}
+                    // onChange={handleChange}
+                    autoWidth
+                    label="Select One"
+                  >
+                    <MenuItem value="">
+                      <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={10}>22</MenuItem>
+                    <MenuItem value={21}>25</MenuItem>
+                    <MenuItem value={22}>30</MenuItem>
+                  </Select>
+                </FormControl>
+              </Grid>
+
+              <Grid container>
+                <Grid item m={1}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      color: "grey",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Language
+                  </Typography>
+                </Grid>
+              </Grid>
+
+              <Grid
+                item
+                m={1}
+                sx={
+                  {
+                    // dispaly:"flex",
+                    // flexDirection:"row",
+                  }
+                }
+                lg={12}
+                xs={12}
+              >
+                <FormControl
+                  sx={{ minWidth: { lg: 220, xs: 80, sm: 160, md: 160 } }}
+                  size="small"
+                >
+                  <InputLabel id="demo-simple-select-autowidth-label">
+                    Select One
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-autowidth-label"
+                    id="demo-simple-select-autowidth"
+                    // value={age}
+                    // onChange={handleChange}
+                    autoWidth
+                    label="Select One"
+                  >
+                    <MenuItem value="">
+                      <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={10}>22</MenuItem>
+                    <MenuItem value={21}>25</MenuItem>
+                    <MenuItem value={22}>30</MenuItem>
+                  </Select>
+                </FormControl>
+              </Grid>
+              <Grid container>
+                <Grid item m={1}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      fontWeight: "bold",
+                      color: "grey",
+                    }}
+                  >
+                    Complexion{" "}
+                  </Typography>
+                </Grid>
+              </Grid>
+
+              <Grid
+                item
+                m={1}
+                sx={
+                  {
+                    // dispaly:"flex",
+                    // flexDirection:"row",
+                  }
+                }
+                lg={12}
+                xs={12}
+              >
+                <FormControl
+                  sx={{ minWidth: { lg: 220, xs: 80, sm: 160, md: 160 } }}
+                  size="small"
+                >
+                  <InputLabel id="demo-simple-select-autowidth-label">
+                    Select One
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-autowidth-label"
+                    id="demo-simple-select-autowidth"
+                    // value={age}
+                    // onChange={handleChange}
+                    autoWidth
+                    label="Select One"
+                  >
+                    <MenuItem value="">
+                      <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={10}>22</MenuItem>
+                    <MenuItem value={21}>25</MenuItem>
+                    <MenuItem value={22}>30</MenuItem>
+                  </Select>
+                </FormControl>
+              </Grid>
+              <Grid container>
+                <Grid item m={1}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      color: "grey",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Qualification
+                  </Typography>
+                </Grid>
+              </Grid>
+
+              <Grid
+                item
+                m={1}
+                sx={
+                  {
+                    // dispaly:"flex",
+                    // flexDirection:"row",
+                  }
+                }
+                lg={12}
+                xs={12}
+              >
+                <FormControl
+                  sx={{ minWidth: { lg: 220, xs: 80, sm: 160, md: 160 } }}
+                  size="small"
+                >
+                  <InputLabel id="demo-simple-select-autowidth-label">
+                    Select One
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-autowidth-label"
+                    id="demo-simple-select-autowidth"
+                    // value={age}
+                    // onChange={handleChange}
+                    autoWidth
+                    label="Select One"
+                  >
+                    <MenuItem value="">
+                      <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={10}>22</MenuItem>
+                    <MenuItem value={21}>25</MenuItem>
+                    <MenuItem value={22}>30</MenuItem>
+                  </Select>
+                </FormControl>
+              </Grid>
+              <Grid container>
+                <Grid item m={1}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      color: "grey",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Profession
+                  </Typography>
+                </Grid>
+              </Grid>
+
+              <Grid
+                item
+                m={1}
+                sx={
+                  {
+                    // dispaly:"flex",
+                    // flexDirection:"row",
+                  }
+                }
+                lg={12}
+                xs={12}
+              >
+                <FormControl
+                  sx={{ minWidth: { lg: 220, xs: 80, sm: 160, md: 160 } }}
+                  size="small"
+                >
+                  <InputLabel id="demo-simple-select-autowidth-label">
+                    Select One
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-autowidth-label"
+                    id="demo-simple-select-autowidth"
+                    // value={age}
+                    // onChange={handleChange}
+                    autoWidth
+                    label="Select One"
+                  >
+                    <MenuItem value="">
+                      <em>None</em>
+                    </MenuItem>
+                    <MenuItem value={10}>22</MenuItem>
+                    <MenuItem value={21}>25</MenuItem>
+                    <MenuItem value={22}>30</MenuItem>
+                  </Select>
+                </FormControl>
+              </Grid>
+              <Grid container>
+                <Grid item lg={12} xs={12}>
+                  <Typography align="center">
+                    <Button
+                      sx={{ width: { lg: "80%", xs: "70%" }, marginTop: "15%" }}
+                      variant="contained"
+                      color="error"
                     >
-                      <MenuItem value="">
-                        <em>None</em>
-                      </MenuItem>
-                      <MenuItem value={10}>22</MenuItem>
-                      <MenuItem value={21}>25</MenuItem>
-                      <MenuItem value={22}>30</MenuItem>
-                    </Select>
-                  </FormControl>
+                      Search
+                    </Button>
+                  </Typography>
                 </Grid>
               </Grid>
             </Grid>
           </Box>
         </Grid>
 
-        {/* <Grid item lg={9} xs={9} sm={9} md={9}>
+        <Grid item lg={9} xs={9} sm={9} md={9}>
           <Typography variant="h5" align="center">
             All Members
           </Typography>
           <Box
             sx={{
-              marginTop: "5%",
               margin: "auto",
-              width: { lg: "95%", sm: "90%", xs: "85%", md: "80%" },
+              width: { lg: "95%", sm: "70%", xs: "70%", md: "70%" },
               height: { lg: "80%", sm: "80%", xs: "80%", md: "80%" },
-              marginRight: "10%",
               border: "2px solid #C0C0C0",
             }}
           >
-            <AboutusBody />
+            {/* <AboutusBody /> */}
           </Box>
-        </Grid> */}
+        </Grid>
       </Grid>
     </div>
   );
