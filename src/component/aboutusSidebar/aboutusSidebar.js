@@ -17,6 +17,7 @@ import {
   TextField,
 } from "@mui/material";
 import TuneIcon from "@mui/icons-material/Tune";
+import AboutusBody from "../aboutusBody/aboutusBody";
 
 const AboutusSidebar = () => {
   const [age, setAge] = React.useState("");
@@ -652,12 +653,12 @@ const AboutusSidebar = () => {
           <Box
             sx={{
               margin: "auto",
-              width: { lg: "95%", sm: "70%", xs: "70%", md: "70%" },
-              height: { lg: "80%", sm: "80%", xs: "80%", md: "80%" },
+              width: { lg: "85%", sm: "70%", xs: "70%", md: "70%" },
+              height: { lg: "18%", sm: "80%", xs: "80%", md: "80%" },
               border: "2px solid #C0C0C0",
             }}
           >
-            {/* <AboutusBody /> */}
+            <AboutusBody />
           </Box>
         </Grid>
       </Grid>

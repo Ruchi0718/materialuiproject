@@ -1,17 +1,26 @@
 import React from "react";
 import AboutusSidebar from "../../component/aboutusSidebar/aboutusSidebar";
-import { Button, Grid, Typography } from "@mui/material";
+import { Button, Grid, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Image15 from "../../assets/image15.png";
 import Image16 from "../../assets/image16.png";
 import Image17 from "../../assets/Image17.png";
 import Footer from "../../component/footer/footer";
-// import Header from "../../component/header/header";
+import Header from "../../component/header/header";
+import Carou from "../../component/carousel/carousel";
+
 const Aboutus = () => {
   return (
     <>
-      {/* <Header/> */}
-      <AboutusSidebar />
+      <Header />
+      <Box
+        sx={{ width: "100%", height: {lg:"20%",xs:"4%"}, margin: "auto", marginTop: "13%" }}
+      >
+        <Carou />
+      </Box>
+      <Grid sx={{ marginTop: { lg: "1%", xs: "45%", sm: "45%", md: "15%" } }}>
+        <AboutusSidebar />
+      </Grid>
       <Grid container sx={{ displayFlex: "inline", flexDirection: "row" }}>
         <Grid item lg={3} xs={3} sm={3} md={3}>
           <Box
@@ -140,8 +149,8 @@ const Aboutus = () => {
 
       {/* Contact us */}
 
-      <Grid container m={2}>
-        <Grid item lg={12} xs={12} sm={12} md={12}>
+      <Grid container>
+        <Grid item m={2} lg={12} xs={12} sm={12} md={12}>
           <Typography
             align="center"
             sx={{ fontSize: "25px", margin: "auto", fontWeight: "bold" }}
@@ -151,16 +160,83 @@ const Aboutus = () => {
         </Grid>
         <br></br>
       </Grid>
-      <Grid container>
-        <Grid item lg={6} xs={12} md={12} sm={12}>
-          <Typography align="center">
-            <img src={Image17} alt="image2" />
-          </Typography>
+      <Box>
+        <Grid container>
+          <Grid item lg={6} xs={12} md={12} sm={12}>
+            <Typography align="center">
+              <img src={Image17} alt="image2" height="40%" width="70%" />
+            </Typography>
+          </Grid>
+          <Grid item lg={6} xs={12} md={12} sm={12}>
+            <Typography align="center">
+              <TextField
+                // size="small"
+                sx={{ width: 350, p: 1 }}
+                id="full-width-text-field"
+                variant="outlined"
+                label="Name"
+                placeholder="Name"
+                // margin="normal"
+              />
+              <br></br>
+              <TextField
+                // size="small"
+                sx={{ width: 350, p: 1 }}
+                id="full-width-text-field"
+                variant="outlined"
+                label="Email"
+                placeholder="Email"
+                // margin="normal"
+              />
+              <br></br>
+              <TextField
+                // size="small"
+                sx={{ width: 350, p: 1 }}
+                id="full-width-text-field"
+                variant="outlined"
+                label="Phone"
+                placeholder="Phone"
+                // margin="normal"
+              />
+              <br></br>
+              <TextField
+                sx={{ width: 350, p: 1 }}
+                id="full-width-text-field"
+                variant="outlined"
+                label="Message"
+                placeholder="Message"
+                // margin="normal"
+                inputProps={{
+                  style: {
+                    height: "100px",
+                  },
+                }}
+              />
+              <Typography>
+                <Button
+                  sx={{
+                    minWidth: 200,
+                    margin: { xs: 10 },
+                    alignItems: {
+                      xs: "center",
+                      sm: "center",
+                      md: "flex-start",
+                      lg: "flex-start",
+                    },
+                  }}
+                  variant="contained"
+                  color="error"
+                >
+                  {" "}
+                  SUBMIT
+                </Button>
+              </Typography>
+            </Typography>
+          </Grid>
+         
         </Grid>
-        <Grid item  lg={6} xs={12} md={12} sm={12}>
+      </Box>
 
-        </Grid>
-      </Grid>
       <Footer />
     </>
   );
