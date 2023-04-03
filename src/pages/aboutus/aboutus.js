@@ -54,7 +54,7 @@ const Aboutus = () => {
                   Membership
                 </Typography>
               </Grid>
-              <Grid container m={3}>
+              <Grid container >
                 <Grid item lg={12} xs={12} sm={12}>
                   <img
                     style={{ margin: "0 auto", display: "flex" }}
@@ -62,8 +62,8 @@ const Aboutus = () => {
                     alt="diamond"
                   />
                 </Grid>
-                <Grid item lg={12} xs={12} sm={12}>
-                  <Typography sx={{ fontWeight: "bold" }} align="center">
+                <Grid item  lg={12} xs={12} sm={12}>
+                  <Typography  align="center" sx={{ fontWeight: "bold" }}>
                     More no of Profiles
                   </Typography>
                 </Grid>

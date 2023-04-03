@@ -15,8 +15,10 @@ import {
   Select,
   MenuItem,
   TextField,
+  Container,
 } from "@mui/material";
 import TuneIcon from "@mui/icons-material/Tune";
+
 import AboutusBody from "../aboutusBody/aboutusBody";
 
 const AboutusSidebar = () => {
@@ -650,16 +652,33 @@ const AboutusSidebar = () => {
           <Typography variant="h5" align="center">
             All Members
           </Typography>
-          <Box
-            sx={{
-              margin: "auto",
-              width: { lg: "85%", sm: "70%", xs: "70%", md: "70%" },
-              height: { lg: "18%", sm: "80%", xs: "80%", md: "80%" },
-              border: "2px solid #C0C0C0",
-            }}
-          >
-            <AboutusBody />
-          </Box>
+          <Container>
+          
+        
+                <Box
+                  sx={{
+                    margin: "auto",
+                    width: { lg: "90%", sm: "100%", xs: "80%", md: "100%" },
+                    height: { lg: "99%", sm: "99%", xs: "99%", md: "99%" },
+                    // border: "2px solid #C0C0C0",
+                  }}
+                >
+                  <AboutusBody />
+                  <br></br>
+                  <AboutusBody />
+                  <br></br>
+
+                  <AboutusBody />
+                  <br></br>
+
+                  <AboutusBody />
+                  <br></br>
+
+                  <AboutusBody />
+
+                </Box>
+         
+          </Container>
         </Grid>
       </Grid>
     </div>
