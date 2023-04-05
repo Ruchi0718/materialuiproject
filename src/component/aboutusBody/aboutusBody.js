@@ -33,7 +33,7 @@ const AboutusBody = () => {
                 // sx={{ margin: "auto" }}
                 image={Profile1}
                 height="200px"
-                width={{lg:"300px",xs:"250px"}}
+                width="300px"
                 alt="textimage"
                 
               />
