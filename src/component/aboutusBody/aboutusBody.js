@@ -6,16 +6,80 @@ import {
   Grid,
   Box,
   Container,
+  useTheme,
   Button,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 
 const AboutusBody = () => {
+  const theme = useTheme();
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+
+
   return (
     <>
+    <div>
+
+    {isMatch ? (
+      <>
+      
       <Container sx={{border:"2px solid  #C0C0C0"}}>
         <Grid container>
-          <Grid item  xs={2}>
+          <Grid item   lg={2}xs={6}>
+            <Card sx={{ maxWidth: 300, height: 200 }}>
+              <CardMedia
+                component="img"
+                // sx={{ margin: "auto" }}
+                image={Profile1}
+                height="200px"
+                width={{lg:"300px",xs:"250px"}}
+                alt="textimage"
+                
+              />
+            </Card>
+          </Grid>
+          <Box sx={{ height: "40%", width: {lg:"60%",xs:"50%",sm:"55%"} }}>
+            <Grid   m={1}xs={12}>
+              <Typography sx={{ fontSize: {lg:"18px",xs:"10px"}, fontWeight: "bold" }}>
+                MEMBERS ID : 132456
+              </Typography>
+            </Grid>
+            <Grid container m={1}>
+              <Grid item sx={{ margin: "auto" }}lg={2} xs={12} sm={12}>
+                <Typography sx={{fontSize:"15px"}}>Age</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}sm={12}>
+              <Typography sx={{fontSize:"15px"}}>25</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12} sm={12}>
+              <Typography sx={{fontSize:"15px"}}>Height</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}sm={12}>
+              <Typography sx={{fontSize:"15px"}}>5.5</Typography>
+              </Grid>
+            </Grid>
+    
+            <Grid container >
+              <Grid item  xs={12}>
+                <Typography align="right">
+
+              <Button  sx={{color:"red"}}variant="text" ><u>View Profile</u></Button>
+                </Typography>
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
+      </Container>
+      
+      
+      </>
+      
+      ):(
+<>
+<Container sx={{border:"2px solid  #C0C0C0"}}>
+        <Grid container>
+          <Grid item   lg={2}xs={6}>
             <Card sx={{ maxWidth: 300, height: 200 }}>
               <CardMedia
                 component="img"
@@ -27,24 +91,24 @@ const AboutusBody = () => {
               />
             </Card>
           </Grid>
-          <Box sx={{ height: "40%", width: "60%" }}>
-            <Grid  m={2}xs={12}>
+          <Box sx={{ height: "40%", width: {lg:"60%",xs:"50%"} }}>
+            <Grid   m={1}xs={12}>
               <Typography sx={{ fontSize: "18px", fontWeight: "bold" }}>
                 MEMBERS ID : 132456
               </Typography>
             </Grid>
             <Grid container m={1}>
-              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Grid item sx={{ margin: "auto" }}lg={2} xs={12}>
                 <Typography sx={{fontSize:"15px"}}>Age</Typography>
               </Grid>
-              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
               <Typography sx={{fontSize:"15px"}}>25</Typography>
               </Grid>
-              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
               <Typography sx={{fontSize:"15px"}}>Height</Typography>
               </Grid>
-              <Grid item sx={{ margin: "auto" }} xs={2}>
-              <Typography sx={{fontSize:"15px"}}>5.5</Typography>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+                <Typography sx={{fontSize:"15px"}}>5.5</Typography>
               </Grid>
             </Grid>
             <Grid container m={1}>
@@ -55,48 +119,362 @@ const AboutusBody = () => {
               <Typography sx={{fontSize:"15px"}}>Hindu</Typography>
               </Grid>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                Caste
+              <Typography sx={{fontSize:"15px"}}>Caste</Typography>
               </Grid>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                Tamil
+              <Typography sx={{fontSize:"15px"}}>Tamil</Typography>
               </Grid>
             </Grid>{" "}
             <Grid container m={1}>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                Language
+              <Typography sx={{fontSize:"15px"}}>Language</Typography>
               </Grid>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                Tamil
+              <Typography sx={{fontSize:"15px"}}>Tamil</Typography>
               </Grid>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                Marital Status
+              <Typography sx={{fontSize:"15px"}}>Marital Status</Typography>
               </Grid>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                Unmarried
+              <Typography sx={{fontSize:"15px"}}>Unmarried</Typography>
               </Grid>
             </Grid>
             <Grid container m={1}>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                Location
+              <Typography sx={{fontSize:"15px"}}>Location</Typography>
               </Grid>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                Tamilnadu
+              <Typography sx={{fontSize:"15px"}}>Tamilnadu</Typography>
               </Grid>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                Height
+              <Typography sx={{fontSize:"15px"}}>Height</Typography>
               </Grid>
               <Grid item sx={{ margin: "auto" }} xs={2}>
-                5.5
+              <Typography sx={{fontSize:"15px"}}>5.5</Typography>
               </Grid>
             </Grid>
             <Grid container >
               <Grid item xs={12}>
-              <Button  sx={{color:"red",marginLeft:"70%"}}variant="text" ><u>View Profile</u></Button>
+                <Typography align="right">
+
+              <Button  sx={{color:"red"}}variant="text" ><u>View Profile</u></Button>
+                </Typography>
               </Grid>
             </Grid>
           </Box>
         </Grid>
       </Container>
+
+
+</>
+    )}
+    
+    </div>
+    <br></br>
+
+    <div>
+
+{isMatch ? (
+  <>
+  
+  <Container sx={{border:"2px solid  #C0C0C0"}}>
+    <Grid container>
+      <Grid item   lg={2}xs={6}>
+        <Card sx={{ maxWidth: 300, height: 200 }}>
+          <CardMedia
+            component="img"
+            // sx={{ margin: "auto" }}
+            image={Profile1}
+            height="200px"
+            width={{lg:"300px",xs:"250px"}}
+            alt="textimage"
+            
+          />
+        </Card>
+      </Grid>
+      <Box sx={{ height: "40%", width: {lg:"60%",xs:"50%",sm:"55%"} }}>
+        <Grid   m={1}xs={12}>
+          <Typography sx={{ fontSize: {lg:"18px",xs:"10px"}, fontWeight: "bold" }}>
+            MEMBERS ID : 132456
+          </Typography>
+        </Grid>
+        <Grid container m={1}>
+          <Grid item sx={{ margin: "auto" }}lg={2} xs={12}>
+            <Typography sx={{fontSize:"15px"}}>Age</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+          <Typography sx={{fontSize:"15px"}}>25</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+          <Typography sx={{fontSize:"15px"}}>Height</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+          <Typography sx={{fontSize:"15px"}}>5.5</Typography>
+          </Grid>
+        </Grid>
+
+        <Grid container >
+          <Grid item  xs={12}>
+            <Typography align="right">
+
+          <Button  sx={{color:"red"}}variant="text" ><u>View Profile</u></Button>
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+    </Grid>
+  </Container>
+  
+  
+  </>
+  
+  ):(
+<>
+<Container sx={{border:"2px solid  #C0C0C0"}}>
+    <Grid container>
+      <Grid item   lg={2}xs={6}>
+        <Card sx={{ maxWidth: 300, height: 200 }}>
+          <CardMedia
+            component="img"
+            // sx={{ margin: "auto" }}
+            image={Profile1}
+            height="200px"
+            width="300px"
+            alt="textimage"
+          />
+        </Card>
+      </Grid>
+      <Box sx={{ height: "40%", width: {lg:"60%",xs:"50%"} }}>
+        <Grid   m={1}xs={12}>
+          <Typography sx={{ fontSize: "18px", fontWeight: "bold" }}>
+            MEMBERS ID : 132456
+          </Typography>
+        </Grid>
+        <Grid container m={1}>
+          <Grid item sx={{ margin: "auto" }}lg={2} xs={12}>
+            <Typography sx={{fontSize:"15px"}}>Age</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+          <Typography sx={{fontSize:"15px"}}>25</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+          <Typography sx={{fontSize:"15px"}}>Height</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+            <Typography sx={{fontSize:"15px"}}>5.5</Typography>
+          </Grid>
+        </Grid>
+        <Grid container m={1}>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Relgion</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Hindu</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Caste</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Tamil</Typography>
+          </Grid>
+        </Grid>{" "}
+        <Grid container m={1}>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Language</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Tamil</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Marital Status</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Unmarried</Typography>
+          </Grid>
+        </Grid>
+        <Grid container m={1}>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Location</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Tamilnadu</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>Height</Typography>
+          </Grid>
+          <Grid item sx={{ margin: "auto" }} xs={2}>
+          <Typography sx={{fontSize:"15px"}}>5.5</Typography>
+          </Grid>
+        </Grid>
+        <Grid container >
+          <Grid item xs={12}>
+            <Typography align="right">
+
+          <Button  sx={{color:"red"}}variant="text" ><u>View Profile</u></Button>
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+    </Grid>
+  </Container>
+
+
+</>
+)}
+
+</div>  
+<br></br>
+ <div>
+
+    {isMatch ? (
+      <>
+      
+      <Container sx={{border:"2px solid  #C0C0C0"}}>
+        <Grid container>
+          <Grid item   lg={2}xs={6}>
+            <Card sx={{ maxWidth: 300, height: 200 }}>
+              <CardMedia
+                component="img"
+                // sx={{ margin: "auto" }}
+                image={Profile1}
+                height="200px"
+                width={{lg:"300px",xs:"250px"}}
+                alt="textimage"
+                
+              />
+            </Card>
+          </Grid>
+          <Box sx={{ height: "40%", width: {lg:"60%",xs:"50%",sm:"55%"} }}>
+            <Grid   m={1}xs={12}>
+              <Typography sx={{ fontSize: {lg:"18px",xs:"10px"}, fontWeight: "bold" }}>
+                MEMBERS ID : 132456
+              </Typography>
+            </Grid>
+            <Grid container m={1}>
+              <Grid item sx={{ margin: "auto" }}lg={2} xs={12}>
+                <Typography sx={{fontSize:"15px"}}>Age</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+              <Typography sx={{fontSize:"15px"}}>25</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+              <Typography sx={{fontSize:"15px"}}>Height</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+              <Typography sx={{fontSize:"15px"}}>5.5</Typography>
+              </Grid>
+            </Grid>
+    
+            <Grid container >
+              <Grid item  xs={12}>
+                <Typography align="right">
+
+              <Button  sx={{color:"red"}}variant="text" ><u>View Profile</u></Button>
+                </Typography>
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
+      </Container>
+      
+      
+      </>
+      
+      ):(
+<>
+<Container sx={{border:"2px solid  #C0C0C0"}}>
+        <Grid container>
+          <Grid item   lg={2}xs={6}>
+            <Card sx={{ maxWidth: 300, height: 200 }}>
+              <CardMedia
+                component="img"
+                // sx={{ margin: "auto" }}
+                image={Profile1}
+                height="200px"
+                width="300px"
+                alt="textimage"
+              />
+            </Card>
+          </Grid>
+          <Box sx={{ height: "40%", width: {lg:"60%",xs:"50%"} }}>
+            <Grid   m={1}xs={12}>
+              <Typography sx={{ fontSize: "18px", fontWeight: "bold" }}>
+                MEMBERS ID : 132456
+              </Typography>
+            </Grid>
+            <Grid container m={1}>
+              <Grid item sx={{ margin: "auto" }}lg={2} xs={12}>
+                <Typography sx={{fontSize:"15px"}}>Age</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+              <Typography sx={{fontSize:"15px"}}>25</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+              <Typography sx={{fontSize:"15px"}}>Height</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
+                <Typography sx={{fontSize:"15px"}}>5.5</Typography>
+              </Grid>
+            </Grid>
+            <Grid container m={1}>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Relgion</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Hindu</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Caste</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Tamil</Typography>
+              </Grid>
+            </Grid>{" "}
+            <Grid container m={1}>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Language</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Tamil</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Marital Status</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Unmarried</Typography>
+              </Grid>
+            </Grid>
+            <Grid container m={1}>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Location</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Tamilnadu</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>Height</Typography>
+              </Grid>
+              <Grid item sx={{ margin: "auto" }} xs={2}>
+              <Typography sx={{fontSize:"15px"}}>5.5</Typography>
+              </Grid>
+            </Grid>
+            <Grid container >
+              <Grid item xs={12}>
+                <Typography align="right">
+
+              <Button  sx={{color:"red"}}variant="text" ><u>View Profile</u></Button>
+                </Typography>
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
+      </Container>
+
+
+</>
+    )}
+    
+    </div>
     </>
   );
 };

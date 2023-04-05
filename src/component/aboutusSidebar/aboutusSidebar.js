@@ -30,13 +30,13 @@ const AboutusSidebar = () => {
   return (
     <div>
       <Grid container sx={{ displayFlex: "inline", flexDirection: "row" }}>
-        <Grid item lg={3} xs={3} sm={3} md={3}>
+        <Grid item p={1} lg={3} xs={3} sm={3} md={3}>
           <Box
             sx={{
               marginTop: { lg: "5%", xs: "5%", sm: "5%", md: "5%" },
-              margin: "auto",
-              width: { lg: "70%", xs: "6rem", sm: "100%", md: "80%" },
-              height: { lg: "99%" },
+              margin: {lg:"auto",xs:"auto"},
+              width: { lg: "80%", xs: "7rem", sm: "100%", md: "80%" },
+              height: { lg: "100%" },
               border: "2px solid #C0C0C0",
               borderRadius: "4px",
             }}
@@ -632,7 +632,7 @@ const AboutusSidebar = () => {
                 </FormControl>
               </Grid>
               <Grid container>
-                <Grid item lg={12} xs={12}>
+                <Grid item p={1} lg={12} xs={12}>
                   <Typography align="center">
                     <Button
                       sx={{ width: { lg: "80%", xs: "70%" }, marginTop: "15%" }}
@@ -658,24 +658,14 @@ const AboutusSidebar = () => {
                 <Box
                   sx={{
                     margin: "auto",
-                    width: { lg: "90%", sm: "100%", xs: "80%", md: "100%" },
+                    width: { lg: "90%", sm: "100%", xs: "75%", md: "100%" },
                     height: { lg: "99%", sm: "99%", xs: "99%", md: "99%" },
                     // border: "2px solid #C0C0C0",
                   }}
                 >
                   <AboutusBody />
                   <br></br>
-                  <AboutusBody />
-                  <br></br>
-
-                  <AboutusBody />
-                  <br></br>
-
-                  <AboutusBody />
-                  <br></br>
-
-                  <AboutusBody />
-
+                  
                 </Box>
          
           </Container>

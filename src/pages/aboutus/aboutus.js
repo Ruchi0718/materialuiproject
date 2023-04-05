@@ -22,10 +22,10 @@ const Aboutus = () => {
         <AboutusSidebar />
       </Grid>
       <Grid container sx={{ displayFlex: "inline", flexDirection: "row" }}>
-        <Grid item lg={3} xs={3} sm={3} md={3}>
+        <Grid item p={1} lg={3} xs={3} sm={3} md={3}>
           <Box
             sx={{
-              width: { lg: "70%", xs: "6rem", sm: "100%", md: "80%" },
+              width: { lg: "80%", xs: "7rem", sm: "100%", md: "80%" },
               height: { lg: "18rem", xs: "28rem", sm: "29rem" },
               border: "2px solid #C0C0C0",
               margin: "auto",
@@ -120,18 +120,19 @@ const Aboutus = () => {
               </Grid>
             </Grid>
             <Grid container>
-              <Grid item>
-                <Typography>
+              <Grid item  m={2}lg={12} xs={12}>
+                <Typography align="center">
                   <Button
                     sx={{
                       minWidth: 200,
-                      margin: { xs: 10 },
-                      alignItems: {
-                        xs: "center",
-                        sm: "center",
-                        md: "flex-start",
-                        lg: "flex-start",
-                      },
+                      margin: "auto",
+                      // alignItems: {
+                      //   xs: "center",
+                      //   sm: "center",
+                      //   md: "center",
+                      //   // lg: "flex-start",
+                      // },
+                      
                     }}
                     variant="contained"
                     color="error"
@@ -215,7 +216,7 @@ const Aboutus = () => {
               <Typography>
                 <Button
                   sx={{
-                    minWidth: 200,
+                    minWidth: {lg:200,xs:100},
                     margin: { xs: 10 },
                     alignItems: {
                       xs: "center",
