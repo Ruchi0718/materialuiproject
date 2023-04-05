@@ -15,9 +15,9 @@ const Carou = () => {
     <div>
     <SimpleCarouselSlider
     images={images} 
-    autoplay={false}
-    width= "100%"
-    height="450px"
+    autoplay={true}
+    width= {{lg:"100%",xs:"40%" ,sm:"50%" ,md:"60%"}}
+    height={{lg:"450px",xs:"350px"}}
      
     />
   </div>
