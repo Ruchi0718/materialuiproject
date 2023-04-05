@@ -46,16 +46,16 @@ const AboutusBody = () => {
               </Typography>
             </Grid>
             <Grid container m={1}>
-              <Grid item sx={{ margin: "auto" }}lg={2} xs={12} sm={12}>
+              <Grid item sx={{ margin: "auto" }}lg={2} xs={12}>
                 <Typography sx={{fontSize:"15px"}}>Age</Typography>
               </Grid>
-              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}sm={12}>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
               <Typography sx={{fontSize:"15px"}}>25</Typography>
               </Grid>
-              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12} sm={12}>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12} >
               <Typography sx={{fontSize:"15px"}}>Height</Typography>
               </Grid>
-              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}sm={12}>
+              <Grid item sx={{ margin: "auto" }}  lg={2}xs={12}>
               <Typography sx={{fontSize:"15px"}}>5.5</Typography>
               </Grid>
             </Grid>

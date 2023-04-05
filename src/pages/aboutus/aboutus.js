@@ -14,7 +14,7 @@ const Aboutus = () => {
     <>
       <Header />
       <Box
-        sx={{ width: "100%", height: {lg:"20%",xs:"4%"}, margin: "auto", marginTop: "13%" }}
+        sx={{ width: "100%", height: {lg:"20%",xs:"4%"}, margin: "auto", marginTop: "15%" }}
       >
         <Carou />
       </Box>
