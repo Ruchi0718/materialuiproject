@@ -5,6 +5,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import Aboutus from "./pages/aboutus/aboutus";
+import Filterui from "./pages/filterUI/filterui";
 
 
 
@@ -17,6 +18,8 @@ root.render(
           <Routes>
             {/* <Route path="/" element={<Home />} /> */}
             <Route path="/" element={<Aboutus />} />
+            <Route path="/filterui" element={<Filterui />} />
+
           </Routes>
         </BrowserRouter>
       </React.StrictMode>

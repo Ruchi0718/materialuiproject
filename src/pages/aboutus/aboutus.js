@@ -1,6 +1,6 @@
 import React from "react";
 import AboutusSidebar from "../../component/aboutusSidebar/aboutusSidebar";
-import { Button, Grid, TextField, Typography } from "@mui/material";
+import { Button, Grid, TextField, Typography, useMediaQuery ,useTheme} from "@mui/material";
 import { Box } from "@mui/system";
 import Image15 from "../../assets/image15.png";
 import Image16 from "../../assets/image16.png";
@@ -10,6 +10,8 @@ import Header from "../../component/header/header";
 import Carou from "../../component/carousel/carousel";
 
 const Aboutus = () => {
+  const theme = useTheme();
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"))
   return (
     <>
       <Header />
@@ -18,10 +20,18 @@ const Aboutus = () => {
       >
         <Carou />
       </Box>
-      <Grid sx={{ marginTop: { lg: "1%", xs: "45%", sm: "45%", md: "15%" } }}>
+      <Grid sx={{ marginTop: { lg: "1%", xs: "2%", sm: "45%", md: "15%" } }}>
         <AboutusSidebar />
       </Grid>
-      <Grid container sx={{ displayFlex: "inline", flexDirection: "row" }}>
+
+      {isMatch ? (
+        <>
+        
+        
+        </>
+      ):(
+        <>
+           <Grid container sx={{ displayFlex: "inline", flexDirection: "row" }}>
         <Grid item p={1} lg={3} xs={3} sm={3} md={3}>
           <Box
             sx={{
@@ -82,6 +92,10 @@ const Aboutus = () => {
           </Box>
         </Grid>
       </Grid>
+        
+        </>
+      )}
+   
       <Grid container>
         <Grid item m={8} lg={12} xs={12} md={12}>
           <Typography

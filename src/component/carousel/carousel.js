@@ -17,7 +17,7 @@ const Carou = () => {
     images={images} 
     autoplay={false}
     width= "100%"
-    height="850px"
+    height="400px"
      
     />
   </div>
