@@ -24,6 +24,7 @@ const Aboutus = () => {
       <Header />
       <Box
         sx={{
+          positon:"fixed",
           width: "100%",
           height: { lg: "20%", xs: "4%" },
           margin: "auto",
