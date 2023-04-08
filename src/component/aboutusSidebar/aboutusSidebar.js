@@ -37,7 +37,7 @@ const AboutusSidebar = () => {
         {isMatch ? (
           <>
             <Grid container>
-              <Grid item xs={1}>
+              <Grid item xs={1} >
                 <Filterui />
               </Grid>
               {/* <Grid item xs={11}>

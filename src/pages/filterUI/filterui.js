@@ -51,13 +51,13 @@ const Filterui = () => {
       pb={1}
       sx={{
         width: anchor === "top" || anchor === "bottom" ? "auto" : 300,
-        height: 1000,
+        height: 1000    ,
       }}
       role="presentation"
       //   onClick={toggleDrawer(anchor, false)}
       //   onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Container>
+      <Container sx={{position:"relative",top:0,left:0,width:300}}>
         <Grid container>
           <Grid item xs={12}>
             <Typography align="right">
