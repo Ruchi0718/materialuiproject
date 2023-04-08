@@ -1,27 +1,25 @@
 import React from "react";
-import { SimpleCarouselSlider } from 'react-simple-carousel-image-slider'
-import 'react-simple-carousel-image-slider/dist/index.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+import Imagecouple1 from "../../assets/imagecouple1.jpg";
+import Imagecouple22 from "../../assets/imagecouple22.avif";
+import Image28 from "../../assets/image28.jpg";
 
+import "./carousel.css";
 
 const Carou = () => {
-  const images = [
-    require('../../assets/imagecouple1.jpg'),
-    require('../../assets/imagecouple22.avif'),
-    require('../../assets/imagecouple3.jpg'),
-
-  ];
-
   return (
-    <div>
-    <SimpleCarouselSlider
-    images={images} 
-    autoplay={false}
-    width= "100%"
-    height="400px"
-     
-    />
-  </div>
-  
+    <Carousel className="main-slide" showThumbs={false} >
+      <div>
+        <img src={Imagecouple1} height="300px" width="500px"  alt=""/>
+      </div>
+      <div>
+        <img src={Imagecouple22} height="300px" width="500px"  alt=""/>
+      </div>
+      <div>
+        <img src={Image28} height="300px" width="500px"  alt=""/>
+      </div>
+    </Carousel>
   );
 };
 export default Carou;

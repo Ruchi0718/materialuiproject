@@ -15,13 +15,13 @@ import {
   Select,
   MenuItem,
   TextField,
-  // Container,
+  Container,
   useTheme,
   useMediaQuery,
 } from "@mui/material";
 import TuneIcon from "@mui/icons-material/Tune";
 import Filterui from "../../pages/filterUI/filterui";
-// import AboutusBody from "../aboutusBody/aboutusBody";
+import AboutusBody from "../aboutusBody/aboutusBody";
 
 const AboutusSidebar = () => {
   const theme = useTheme();
@@ -36,16 +36,28 @@ const AboutusSidebar = () => {
       <Grid container sx={{ displayFlex: "inline", flexDirection: "row" }}>
         {isMatch ? (
           <>
-            <Filterui />
+            <Grid container>
+              <Grid item xs={1}>
+                <Filterui />
+              </Grid>
+              {/* <Grid item xs={11}>
+                <Typography
+                  align="center"
+                  sx={{ fontSize: "20px", fontWeight: "bold" }}
+                >
+                  All Members
+                </Typography>
+              </Grid> */}
+            </Grid>
           </>
         ) : (
           <>
-            <Grid item p={1} lg={3} xs={3} sm={3} md={3}>
+            <Grid item p={1} lg={3} md={3}>
               <Box
                 sx={{
                   marginTop: { lg: "5%", md: "5%" },
                   margin: { lg: "auto", xs: "auto" },
-                  width: { lg: "80%", xs: "7rem", sm: "100%", md: "80%" },
+                  width: { lg: "80%", xs: "7rem", sm: "100%", md: "10rem" },
                   height: { lg: "100%" },
                   border: "2px solid #C0C0C0",
                   borderRadius: "4px",
@@ -77,7 +89,7 @@ const AboutusSidebar = () => {
 
                 <Grid container>
                   <Grid item lg={12}>
-                    <Typography  align="center" sx={{ fontSize: "15px", color: "grey" }}>
+                    <Typography sx={{ fontSize: "15px", color: "grey" }}>
                       Looking For
                     </Typography>
                   </Grid>
@@ -127,29 +139,17 @@ const AboutusSidebar = () => {
                       </RadioGroup>
                     </FormControl>
                   </Grid>
-{/* 
-                  <Grid container>
-                    <Grid item m={1}>
-                      <Typography
-                        sx={{
-                          fontSize: "15px",
-                          color: "grey",
-                          marginLeft: "auto",
-                          marginRight: "auto",
-                        }}
-                      >
-                        Age
-                      </Typography>
-                    </Grid>
-                  </Grid> */}
+
                   <Grid container>
                     <Grid item p={1} lg={5}>
-                      <FormControl sx={{ minWidth: 80 }} size="small">
+                      <FormControl
+                        sx={{ minWidth: { lg: 80, md: 140 } }}
+                        size="small"
+                      >
                         <InputLabel id="demo-simple-select-autowidth-label">
                           Age
                         </InputLabel>
                         <Select
-                          // sx={{marginLeft:"auto",marginRight:"auto" }}
                           labelId="demo-simple-select-autowidth-label"
                           id="demo-simple-select-autowidth"
                           value={age}
@@ -166,10 +166,8 @@ const AboutusSidebar = () => {
                         </Select>
                       </FormControl>
                     </Grid>
-                    <Grid item p={1} lg={2} xs={12}>
-                      <Typography align="center" justifyContent={"center"}>
-                        To
-                      </Typography>
+                    <Grid item p={1} lg={2}>
+                      <Typography align="center">To</Typography>
                     </Grid>
                     <Grid
                       item
@@ -182,7 +180,10 @@ const AboutusSidebar = () => {
                       lg={5}
                       xs={12}
                     >
-                      <FormControl sx={{ minWidth: 80 }} size="small">
+                      <FormControl
+                        sx={{ minWidth: { lg: 80, md: 140 } }}
+                        size="small"
+                      >
                         <InputLabel id="demo-simple-select-autowidth-label">
                           Age
                         </InputLabel>
@@ -222,11 +223,7 @@ const AboutusSidebar = () => {
                         align="center"
                         sx={{
                           fontWeight: "bold",
-                          // alignContent: {
-                          //   xs: "center",
-                          //   sm: "center",
-                          //   md: "center",
-                          // },
+                       
                         }}
                       >
                         <u>Advanced Search</u>
@@ -238,6 +235,7 @@ const AboutusSidebar = () => {
                   <Grid container>
                     <Grid item m={1}>
                       <TextField
+                        sx={{ width: { lg: 220, md: 140 } }}
                         id="outlined-basic"
                         size="small"
                         label="Enter the Id"
@@ -246,16 +244,17 @@ const AboutusSidebar = () => {
                     </Grid>
                   </Grid>
 
-                  <Grid item m={1} lg={12}>
-                    <FormControl sx={{ minWidth: { lg: 220 } }} size="small">
+                  <Grid item m={1} lg={12} md={12}>
+                    <FormControl
+                      sx={{ minWidth: { lg: 220, md: 140 } }}
+                      size="small"
+                    >
                       <InputLabel id="demo-simple-select-autowidth-label">
                         Religion
                       </InputLabel>
                       <Select
                         labelId="demo-simple-select-autowidth-label"
                         id="demo-simple-select-autowidth"
-                        // value={age}
-                        // onChange={handleChange}
                         autoWidth
                         label="Select One"
                       >
@@ -269,8 +268,11 @@ const AboutusSidebar = () => {
                     </FormControl>
                   </Grid>
 
-                  <Grid item m={1} lg={12}>
-                    <FormControl sx={{ minWidth: { lg: 220 } }} size="small">
+                  <Grid item m={1} lg={12} md={12}>
+                    <FormControl
+                      sx={{ minWidth: { lg: 220, md: 140 } }}
+                      size="small"
+                    >
                       <InputLabel id="demo-simple-select-autowidth-label">
                         Relgion
                       </InputLabel>
@@ -292,8 +294,11 @@ const AboutusSidebar = () => {
                     </FormControl>
                   </Grid>
 
-                  <Grid item m={1} lg={12}>
-                    <FormControl sx={{ minWidth: { lg: 220 } }} size="small">
+                  <Grid item m={1} lg={12} md={12}>
+                    <FormControl
+                      sx={{ minWidth: { lg: 220, md: 140 } }}
+                      size="small"
+                    >
                       <InputLabel id="demo-simple-select-autowidth-label">
                         Caste
                       </InputLabel>
@@ -315,8 +320,11 @@ const AboutusSidebar = () => {
                     </FormControl>
                   </Grid>
 
-                  <Grid item m={1} lg={12}>
-                    <FormControl sx={{ minWidth: { lg: 220 } }} size="small">
+                  <Grid item m={1} lg={12} md={12}>
+                    <FormControl
+                      sx={{ minWidth: { lg: 220, md: 140 } }}
+                      size="small"
+                    >
                       <InputLabel id="demo-simple-select-autowidth-label">
                         Sub Caste
                       </InputLabel>
@@ -338,8 +346,11 @@ const AboutusSidebar = () => {
                     </FormControl>
                   </Grid>
 
-                  <Grid item m={1} lg={12}>
-                    <FormControl sx={{ minWidth: { lg: 220 } }} size="small">
+                  <Grid item m={1} lg={12} md={12}>
+                    <FormControl
+                      sx={{ minWidth: { lg: 220, md: 140 } }}
+                      size="small"
+                    >
                       <InputLabel id="demo-simple-select-autowidth-label">
                         Language
                       </InputLabel>
@@ -361,8 +372,11 @@ const AboutusSidebar = () => {
                     </FormControl>
                   </Grid>
 
-                  <Grid item m={1} lg={12}>
-                    <FormControl sx={{ minWidth: { lg: 220 } }} size="small">
+                  <Grid item m={1} lg={12} md={12}>
+                    <FormControl
+                      sx={{ minWidth: { lg: 220, md: 140 } }}
+                      size="small"
+                    >
                       <InputLabel id="demo-simple-select-autowidth-label">
                         Complexion
                       </InputLabel>
@@ -387,18 +401,15 @@ const AboutusSidebar = () => {
                   <Grid
                     item
                     m={1}
-                    sx={
-                      {
-                        // dispaly:"flex",
-                        // flexDirection:"row",
-                      }
-                    }
+                   
                     lg={12}
+                    md={12}
                   >
-                    <FormControl sx={{ minWidth: { lg: 220 } }} size="small">
+                    <FormControl
+                      sx={{ minWidth: { lg: 220, md: 140 } }}
+                      size="small"
+                    >
                       <InputLabel id="demo-simple-select-autowidth-label">
-                        
-                        
                         Qualification
                       </InputLabel>
                       <Select
@@ -422,15 +433,14 @@ const AboutusSidebar = () => {
                   <Grid
                     item
                     m={1}
-                    sx={
-                      {
-                        // dispaly:"flex",
-                        // flexDirection:"row",
-                      }
-                    }
+                   
                     lg={12}
+                    md={12}
                   >
-                    <FormControl sx={{ minWidth: { lg: 220 } }} size="small">
+                    <FormControl
+                      sx={{ minWidth: { lg: 220, md: 140 } }}
+                      size="small"
+                    >
                       <InputLabel>Profession</InputLabel>
                       <Select
                         labelId="demo-simple-select-autowidth-label"
@@ -453,7 +463,7 @@ const AboutusSidebar = () => {
                     <Grid item p={1} lg={12}>
                       <Typography align="center">
                         <Button
-                          sx={{ width: { lg: "80%", xs: "70%" } }}
+                          sx={{ width: { lg: "80%", md: "80%" } }}
                           variant="contained"
                           color="error"
                         >
@@ -468,26 +478,23 @@ const AboutusSidebar = () => {
           </>
         )}
 
-        {/* <Grid item lg={9} xs={9} sm={9} md={9}>
-          <Typography variant="h5" align="center">
-            All Members
-          </Typography>
-          
-        
-                <Container
-                  sx={{
-                    margin: "auto",
-                    width: { lg: "80%", sm: "100%", xs: "75%", md: "100%" },
-                    height: { lg: "32%", sm: "99%", xs: "99%", md: "99%" },
-                    border: "2px solid #C0C0C0",
-                  }}
-                >
-                  <AboutusBody />
-                  <br></br>
-                  
-                </Container>
-         
-        </Grid> */}
+        <Grid item lg={9} xs={12} sm={12} md={9}>
+          <Container
+            sx={{
+              margin: "auto",
+              width: { lg: "80%", sm: "100%", xs: "100%", md: "100%" },
+              height: { lg: "32%", sm: "70%", xs: "80%", md: "99%" },
+              aspectRatio: "/1",
+              // border: "2px solid #C0C0C0",
+            }}
+          >
+            <Typography m={3} align="center" sx={{ fontWeight:"bold" }}>
+              All Members
+            </Typography>
+            <AboutusBody />
+            <br></br>
+          </Container>
+        </Grid>
       </Grid>
     </div>
   );
