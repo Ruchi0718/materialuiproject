@@ -30,7 +30,7 @@ const Filterui = () => {
     setAge(event.target.value);
   };
   const [state, setState] = React.useState({
-    left: false,
+    bottam: false,
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -57,7 +57,7 @@ const Filterui = () => {
       //   onClick={toggleDrawer(anchor, false)}
       //   onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Container sx={{position:"relative",top:0,left:0,width:300}}>
+      <Container sx={{width:300}}>
         <Grid container>
           <Grid item xs={12}>
             <Typography align="right">
@@ -624,11 +624,11 @@ const Filterui = () => {
   return (
     <>
       <div>
-        {["Filter"].map((anchor) => (
+        {["bottom"].map((anchor) => (
           <React.Fragment key={anchor}>
             <IconButton onClick={toggleDrawer(anchor, true)}>
               <Icon>
-                <TuneIcon />
+                <TuneIcon />{anchor}
               </Icon>
             </IconButton>
 
