@@ -4,8 +4,8 @@ import "./index.css";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-// import Aboutus from "./pages/aboutus/aboutus";
-import Mydrawer from "./pages/mydrawer/mydrawer";
+import Aboutus from "./pages/aboutus/aboutus";
+// import Mydrawer from "./pages/mydrawer/mydrawer";
 
 
 
@@ -17,9 +17,9 @@ root.render(
         <BrowserRouter>
           <Routes>
             {/* <Route path="/" element={<Home />} /> */}
-            {/* <Route path="/" element={<Aboutus />} /> */}
+            <Route path="/" element={<Aboutus />} />
             {/* <Route path="/filterui" element={<Filterui/>} /> */}
-            <Route path="/" element={<Mydrawer />} />
+            {/* <Route path="/" element={<Mydrawer />} /> */}
 
 
           </Routes>
