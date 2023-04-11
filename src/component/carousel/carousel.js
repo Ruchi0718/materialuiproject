@@ -9,15 +9,15 @@ import "./carousel.css";
 
 const Carou = () => {
   return (
-    <Carousel className="main-slide" showThumbs={false} >
+    <Carousel className="main-slide" showThumbs={false}>
       <div>
-        <img src={Imagecouple1} height="300px" width="500px"  alt=""/>
+        <img src={Imagecouple1} height="300px" width="500px" alt="" />
       </div>
       <div>
-        <img src={Imagecouple22} height="300px" width="500px"  alt=""/>
+        <img src={Imagecouple22} height="300px" width="500px" alt="" />
       </div>
       <div>
-        <img src={Image28} height="300px" width="500px"  alt=""/>
+        <img src={Image28} height="300px" width="500px" alt="" />
       </div>
     </Carousel>
   );
