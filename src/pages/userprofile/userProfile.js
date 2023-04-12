@@ -6,7 +6,10 @@ import {
   Container,
   Divider,
   Box,
+  Button,
   Paper,
+  Tabs,
+  Tab,
 } from "@mui/material";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -15,11 +18,21 @@ import Profile33 from "../../assets/profile33.png";
 import Imagecouple1 from "../../assets/imagecouple1.jpg";
 import Imagecouple22 from "../../assets/imagecouple22.avif";
 import "./userProfile.css";
+import Header from "../../component/header/header";
+import Footer from "../../component/footer/footer";
 const UserProfile = () => {
+  const [value, setValue] = React.useState("one");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
     <>
-      <Container>
-        <Grid container m={1}>
+      <Header />
+      <Container
+        sx={{ marginTop: { xs: "44%", sm: "44%", lg: "20%", md: "18%" } }}
+      >
+        <Grid container>
           <Grid item>
             <Typography
               sx={{ fontSize: "14px", fontWeight: "bold", color: "grey" }}
@@ -38,7 +51,7 @@ const UserProfile = () => {
             <Typography
               sx={{ fontSize: "14px", fontWeight: "bold", color: "grey" }}
             >
-              Mens Top wear
+              User Profile
             </Typography>
           </Grid>
         </Grid>
@@ -56,7 +69,7 @@ const UserProfile = () => {
                 <img
                   src={Profile33}
                   height="300px"
-                  width="350px"
+                  width="400px"
                   alt=""
                   style={{ borderRadius: "5px" }}
                 />
@@ -65,7 +78,7 @@ const UserProfile = () => {
                 <img
                   src={Imagecouple1}
                   height="300px"
-                  width="350px"
+                  width="400px"
                   alt=""
                   style={{ borderRadius: "5px" }}
                 />
@@ -74,7 +87,7 @@ const UserProfile = () => {
                 <img
                   src={Imagecouple22}
                   height="300px"
-                  width="350px"
+                  width="400px"
                   alt=""
                   style={{ borderRadius: "5px" }}
                 />
@@ -100,86 +113,102 @@ const UserProfile = () => {
                 <Grid container m={1}>
                   <Grid
                     item
-                    sx={{ margin: "auto" }}
-                    lg={2}
-                    xs={2}
-                    sm={2}
-                    md={2}
+                    // sx={{ margin: "auto" }}
+                    lg={3}
+                    xs={3}
+                    sm={3}
+                    md={3}
                   >
                     <Typography sx={{ fontSize: "15px" }}>Age</Typography>
                   </Grid>
                   <Grid
                     item
-                    sx={{ margin: "auto" }}
-                    lg={2}
-                    xs={2}
-                    sm={2}
-                    md={2}
+                    // sx={{ margin: "auto" }}
+                    lg={3}
+                    xs={3}
+                    sm={3}
+                    md={3}
                   >
                     <Typography sx={{ fontSize: "15px" }}>25</Typography>
                   </Grid>
                   <Grid
                     item
-                    sx={{ margin: "auto" }}
-                    lg={2}
-                    xs={2}
-                    sm={2}
-                    md={2}
+                    // sx={{ margin: "auto" }}
+                    lg={3}
+                    xs={3}
+                    sm={3}
+                    md={3}
                   >
                     <Typography sx={{ fontSize: "15px" }}>Height</Typography>
                   </Grid>
                   <Grid
                     item
-                    sx={{ margin: "auto" }}
-                    lg={2}
-                    xs={2}
-                    sm={2}
-                    md={2}
+                    // sx={{ margin: "auto" }}
+                    lg={3}
+                    xs={3}
+                    sm={3}
+                    md={3}
                   >
                     <Typography sx={{ fontSize: "15px" }}>5.5</Typography>
                   </Grid>
                 </Grid>
                 <Grid container m={1}>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
                     <Typography sx={{ fontSize: "15px" }}>Relgion</Typography>
                   </Grid>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
                     <Typography sx={{ fontSize: "15px" }}>Hindu</Typography>
                   </Grid>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
                     <Typography sx={{ fontSize: "15px" }}>Caste</Typography>
                   </Grid>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
                     <Typography sx={{ fontSize: "15px" }}>Tamil</Typography>
                   </Grid>
                 </Grid>{" "}
                 <Grid container m={1}>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+              
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
+              
                     <Typography sx={{ fontSize: "15px" }}>Language</Typography>
                   </Grid>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+              
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
+              
                     <Typography sx={{ fontSize: "15px" }}>Tamil</Typography>
                   </Grid>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+              
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
+              
                     <Typography sx={{ fontSize: "15px" }}>
                       Marital Status
                     </Typography>
                   </Grid>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+              
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
+              
                     <Typography sx={{ fontSize: "15px" }}>Unmarried</Typography>
                   </Grid>
                 </Grid>
                 <Grid container m={1}>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+              
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
+              
                     <Typography sx={{ fontSize: "15px" }}>Location</Typography>
                   </Grid>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+              
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
+              
                     <Typography sx={{ fontSize: "15px" }}>Tamilnadu</Typography>
                   </Grid>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+              
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
+              
                     <Typography sx={{ fontSize: "15px" }}>Height</Typography>
                   </Grid>
-                  <Grid item sx={{ margin: "auto" }} xs={2}>
+              
+                  <Grid item lg={3} xs={3} sm={3} md={3}>
+              
                     <Typography sx={{ fontSize: "15px" }}>5.5</Typography>
                   </Grid>
                 </Grid>
@@ -200,47 +229,63 @@ const UserProfile = () => {
                   height: 200,
                 }}
               >
-                <Paper elevation={0} >
+                <Paper elevation={0}>
                   <Grid container m={1}>
-                    <Grid item lg={2} xs={2} sm={2}>
-                    <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
+                  <Grid item lg={6} xs={6} sm={6}>
+                      <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
                         Family
                       </Typography>
                     </Grid>
-                    <Grid item lg={10} xs={10} sm={10}>
+                    <Grid item lg={6} xs={6} sm={6}>
                       Middle class
                     </Grid>
                   </Grid>
                   <Grid container m={1}>
-                    <Grid item lg={2} xs={2} sm={2}>
-                    <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
+                  <Grid item lg={6} xs={6} sm={6}>
+
+                      <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
                         Income
                       </Typography>
                     </Grid>
-                    <Grid item lg={10} xs={10} sm={10}>
-                       45000 /-PM
+                    <Grid item lg={6} xs={6} sm={6}>
+                      45000 /-PM
                     </Grid>
                   </Grid>{" "}
                   <Grid container m={1}>
-                    <Grid item lg={2} xs={2} sm={2}>
-                    <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
+                  <Grid item lg={6} xs={6} sm={6}>
+
+                      <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
                         Job
                       </Typography>
                     </Grid>
-                    <Grid item lg={10} xs={10} sm={10}>
+                    <Grid item lg={6} xs={6} sm={6}>
                       Developer
                     </Grid>
                   </Grid>{" "}
                   <Grid container m={1}>
-                    <Grid item lg={2} xs={2} sm={2}>
+                  <Grid item lg={6} xs={6} sm={6}>
+
                       <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
                         Place
                       </Typography>
                     </Grid>
-                    <Grid item lg={10} xs={10} sm={10}>
+                    <Grid item lg={6} xs={6} sm={6}>
                       Delhi
                     </Grid>
                   </Grid>
+                  <br></br>
+                  
+                  <Container>
+
+                  <Grid container >
+                    <Grid item xs={6}>
+                      <Button variant="contained" sx={{background:"#FF311A"}}>Contact</Button>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Button variant="contained" sx={{background:"#FF311A"}}>Chat Us</Button>
+                    </Grid>
+                  </Grid>
+                  </Container>
                 </Paper>
               </Box>
             </Grid>
@@ -252,14 +297,27 @@ const UserProfile = () => {
 
         <Grid container m={1}>
           <Grid item xs={12}>
-            <Typography
-              sx={{ color: "#3759B5", fontSize: "15px", fontWeight: "bold" }}
-            >
-              About
-            </Typography>
+            <Box sx={{ width: "100%" }}>
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                aria-label="wrapped label tabs example"
+              >
+                <Tab
+                  value="one"
+                  label={
+                    <Typography sx={{ fontSize: "12px", fontWeight: "bold" }}>
+                      About
+                    </Typography>
+                  }
+                  wrapped
+                />
+               
+              </Tabs>
+              <Divider />
+            </Box>
           </Grid>
         </Grid>
-        <Divider />
         <br></br>
 
         <Grid container m={1}>
@@ -283,6 +341,7 @@ const UserProfile = () => {
           </Grid>
         </Grid>
       </Container>
+      <Footer/>
     </>
   );
 };
