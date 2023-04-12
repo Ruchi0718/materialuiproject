@@ -30,24 +30,26 @@ const UserProfile = () => {
     <>
       <Header />
       <Container
-        sx={{ marginTop: { xs: "44%", sm: "20%", lg: "16%", md: "25%" } }}
+        sx={{ marginTop: { xs: "44%", sm: "25%", lg: "16%", md: "25%" } }}
       >
-        <Grid container>
-          <Grid item>
+        <Grid container direction={"row"} sx={{marginLeft:{lg:"6%",xs:"14%",sm:"15%"}}}>
+          <Grid item >
             <Typography
-              sx={{ fontSize: "14px", fontWeight: "bold", color: "grey" }}
+              sx={{ fontSize: "14px", fontWeight: "bold", color: "grey", }}
             >
               Home
-            </Typography>
+            </Typography> 
+            
+            
           </Grid>
-          <Grid item>
+          <Grid item >
             <Typography>
               <Icon sx={{ width: 20, height: 20, color: "grey" }}>
                 <ArrowRightIcon />
               </Icon>
             </Typography>
           </Grid>
-          <Grid item>
+          <Grid item >
             <Typography
               sx={{ fontSize: "14px", fontWeight: "bold", color: "grey" }}
             >

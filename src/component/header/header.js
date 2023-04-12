@@ -13,7 +13,7 @@ import {
   Avatar,
 } from "@mui/material";
 
-import { Grid, Paper, Checkbox } from "@mui/material";
+import { Grid,} from "@mui/material";
 import Image13 from "../../assets/image13.jpg";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -21,7 +21,6 @@ import AddIcon from "@mui/icons-material/Add";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 import GoogleIcon from "@mui/icons-material/Google";
-import FormControlLabel from "@mui/material/FormControlLabel";
 import Drawercomp from "../Drawercomp";
 import Header1responsive from "../header1responsive/headerresponsive";
 
@@ -58,7 +57,7 @@ const Header = () => {
                     <Grid sx={{ marginTop: 2 }} item xs={4}>
                       <img src={Image13} alt="image13" />
                     </Grid>
-                    <Grid item xs={4}>
+                    {/* <Grid item xs={4}>
                       <Paper
                         variant="outlined"
                         sx={{
@@ -85,16 +84,16 @@ const Header = () => {
                           />
                         </Grid>
                       </Paper>
-                    </Grid>
-                    <Grid item xs={3}>
+                    </Grid> */}
+                    <Grid item xs={8}>
                       <Stack
-                        sx={{ marginLeft: "30%" }}
-                        m={4}
+                        // sx={{ marginLeft: "30%" }}
+                        m={3}
                         spacing={2}
                         direction="row"
                       >
                         <Button
-                          sx={{ background: "#FF311A" }}
+                          sx={{ background: "#FF311A" ,marginLeft:"70%"}}
                           startIcon={<AddIcon />}
                           variant="contained"
                         >
@@ -110,7 +109,7 @@ const Header = () => {
                       </Stack>
 
                       <Stack
-                        sx={{ marginBottam: 12, marginLeft: "50%" }}
+                        sx={{ marginBottam: 12, marginLeft: "70%" }}
                         spacing={1}
                         direction="row"
                       >
