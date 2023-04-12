@@ -30,7 +30,7 @@ const UserProfile = () => {
     <>
       <Header />
       <Container
-        sx={{ marginTop: { xs: "44%", sm: "44%", lg: "20%", md: "18%" } }}
+        sx={{ marginTop: { xs: "44%", sm: "20%", lg: "16%", md: "25%" } }}
       >
         <Grid container>
           <Grid item>
@@ -57,18 +57,20 @@ const UserProfile = () => {
         </Grid>
         <Grid container m={1}>
           <Grid item xs={12}>
-            <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
+            <Typography
+              sx={{ fontSize: "25px", fontWeight: "bold", marginLeft:{lg:"5%",xs:"12%",sm:"13%",md:"14%"}}}
+            >
               User Profile
             </Typography>
           </Grid>
         </Grid>
         <Grid container>
-          <Grid item xs={12} lg={6} sm={12}>
+          <Grid item xs={12} lg={5} sm={12}>
             <Carousel>
               <div>
                 <img
                   src={Profile33}
-                  height="300px"
+                  height="450px"
                   width="400px"
                   alt=""
                   style={{ borderRadius: "5px" }}
@@ -77,7 +79,7 @@ const UserProfile = () => {
               <div>
                 <img
                   src={Imagecouple1}
-                  height="300px"
+                  height="450px"
                   width="400px"
                   alt=""
                   style={{ borderRadius: "5px" }}
@@ -86,7 +88,7 @@ const UserProfile = () => {
               <div>
                 <img
                   src={Imagecouple22}
-                  height="300px"
+                  height="450px"
                   width="400px"
                   alt=""
                   style={{ borderRadius: "5px" }}
@@ -94,7 +96,7 @@ const UserProfile = () => {
               </div>
             </Carousel>
           </Grid>
-          <Grid item xs={12} sm={12} lg={6}>
+          <Grid item xs={12} sm={12} lg={7}>
             <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
               Suraj Sharma
             </Typography>
@@ -167,48 +169,38 @@ const UserProfile = () => {
                   </Grid>
                 </Grid>{" "}
                 <Grid container m={1}>
-              
                   <Grid item lg={3} xs={3} sm={3} md={3}>
-              
                     <Typography sx={{ fontSize: "15px" }}>Language</Typography>
                   </Grid>
-              
+
                   <Grid item lg={3} xs={3} sm={3} md={3}>
-              
                     <Typography sx={{ fontSize: "15px" }}>Tamil</Typography>
                   </Grid>
-              
+
                   <Grid item lg={3} xs={3} sm={3} md={3}>
-              
                     <Typography sx={{ fontSize: "15px" }}>
                       Marital Status
                     </Typography>
                   </Grid>
-              
+
                   <Grid item lg={3} xs={3} sm={3} md={3}>
-              
                     <Typography sx={{ fontSize: "15px" }}>Unmarried</Typography>
                   </Grid>
                 </Grid>
                 <Grid container m={1}>
-              
                   <Grid item lg={3} xs={3} sm={3} md={3}>
-              
                     <Typography sx={{ fontSize: "15px" }}>Location</Typography>
                   </Grid>
-              
+
                   <Grid item lg={3} xs={3} sm={3} md={3}>
-              
                     <Typography sx={{ fontSize: "15px" }}>Tamilnadu</Typography>
                   </Grid>
-              
+
                   <Grid item lg={3} xs={3} sm={3} md={3}>
-              
                     <Typography sx={{ fontSize: "15px" }}>Height</Typography>
                   </Grid>
-              
+
                   <Grid item lg={3} xs={3} sm={3} md={3}>
-              
                     <Typography sx={{ fontSize: "15px" }}>5.5</Typography>
                   </Grid>
                 </Grid>
@@ -231,7 +223,7 @@ const UserProfile = () => {
               >
                 <Paper elevation={0}>
                   <Grid container m={1}>
-                  <Grid item lg={6} xs={6} sm={6}>
+                    <Grid item lg={6} xs={6} sm={6}>
                       <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
                         Family
                       </Typography>
@@ -241,8 +233,7 @@ const UserProfile = () => {
                     </Grid>
                   </Grid>
                   <Grid container m={1}>
-                  <Grid item lg={6} xs={6} sm={6}>
-
+                    <Grid item lg={6} xs={6} sm={6}>
                       <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
                         Income
                       </Typography>
@@ -252,8 +243,7 @@ const UserProfile = () => {
                     </Grid>
                   </Grid>{" "}
                   <Grid container m={1}>
-                  <Grid item lg={6} xs={6} sm={6}>
-
+                    <Grid item lg={6} xs={6} sm={6}>
                       <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
                         Job
                       </Typography>
@@ -263,8 +253,7 @@ const UserProfile = () => {
                     </Grid>
                   </Grid>{" "}
                   <Grid container m={1}>
-                  <Grid item lg={6} xs={6} sm={6}>
-
+                    <Grid item lg={6} xs={6} sm={6}>
                       <Typography sx={{ fontSize: "15px", fontWeight: "bold" }}>
                         Place
                       </Typography>
@@ -274,17 +263,25 @@ const UserProfile = () => {
                     </Grid>
                   </Grid>
                   <br></br>
-                  
                   <Container>
-
-                  <Grid container >
-                    <Grid item xs={6}>
-                      <Button variant="contained" sx={{background:"#FF311A"}}>Contact</Button>
+                    <Grid container>
+                      <Grid item xs={6}>
+                        <Button
+                          variant="contained"
+                          sx={{ background: "#FF311A" }}
+                        >
+                          Contact
+                        </Button>
+                      </Grid>
+                      <Grid item xs={6}>
+                        <Button
+                          variant="contained"
+                          sx={{ background: "#FF311A" }}
+                        >
+                          Chat Us
+                        </Button>
+                      </Grid>
                     </Grid>
-                    <Grid item xs={6}>
-                      <Button variant="contained" sx={{background:"#FF311A"}}>Chat Us</Button>
-                    </Grid>
-                  </Grid>
                   </Container>
                 </Paper>
               </Box>
@@ -312,13 +309,13 @@ const UserProfile = () => {
                   }
                   wrapped
                 />
-               
               </Tabs>
               <Divider />
             </Box>
           </Grid>
         </Grid>
         <br></br>
+<Container>
 
         <Grid container m={1}>
           <Grid item xs={12}>
@@ -330,18 +327,24 @@ const UserProfile = () => {
           <br></br>
 
           <Grid item xs={12}>
-            <Typography sx={{ fontSize: "15px" }}>
+            <Typography  align="justify" sx={{ fontSize: "15px" }}>
               When its colder than the far side of the moon and splitting rain
               too,you have still to look good.From water-repellant leather to a
               rugged outsole,the Lunar Force 1 adapter AF-1 style so you can
               keep your flame burning when the weather hits.Metal lace hardware
               and extended tongue bring mountain boot toughness,while the
-              star-studded toe design gives your look the edge
+              star-studded toe design gives your look the edge.
             </Typography>
           </Grid>
         </Grid>
+</Container>
       </Container>
-      <Footer/>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <Footer />
     </>
   );
 };
