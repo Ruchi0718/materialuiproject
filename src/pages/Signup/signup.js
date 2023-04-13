@@ -29,7 +29,10 @@ const Signup = () => {
       {isMatch ? (
         <>
           <Container>
-            <Grid container sx={{ marginTop: {  xs: "50%",sm:"20%",md:"20%" } }}>
+            <Grid
+              container
+              sx={{ marginTop: { xs: "50%", sm: "20%", md: "20%" } }}
+            >
               <Grid item xs={12} lg={6}>
                 <Box sx={{ width: "100%" }}>
                   <Tabs
@@ -86,7 +89,7 @@ const Signup = () => {
                     <br></br>
                     <Grid item p={2} xs={12}>
                       <Typography align="center">
-                        <Button 
+                        <Button
                           variant="contained"
                           sx={{ background: "#FF311A", width: 100 }}
                         >
@@ -105,18 +108,21 @@ const Signup = () => {
       ) : (
         <>
           <Container>
-            <Grid container sx={{ marginTop: { lg: "18%", xs: "45%",sm:"20%",md:"25%" } }}>
-              <Grid item    xs={12} lg={6} md={6}>
+            <Grid
+              container
+              sx={{ marginTop: { lg: "18%", xs: "45%", sm: "20%", md: "25%" } }}
+            >
+              <Grid item xs={12} lg={6} md={6}>
                 {/* <Container > */}
-              
-                  <Container
-                    sx={{
-                        marginTop:"10%",
-                      width: 500,
-                      maxWidth: "100%",
-                    }}
-                  >
-                        <Tabs
+
+                <Container
+                  sx={{
+                    marginTop: "10%",
+                    width: 500,
+                    maxWidth: "100%",
+                  }}
+                >
+                  <Tabs
                     value={value}
                     onChange={handleChange}
                     aria-label="wrapped label tabs example"
@@ -138,53 +144,52 @@ const Signup = () => {
                     />
                   </Tabs>
                   <br></br>
-                  <Typography 
+                  <Typography
                     sx={{ fontSize: "12px", fontWeight: "bold", color: "grey" }}
                   >
                     Login with your credentials to find your life partner
                   </Typography>
-                    <TextField
-                      size="small"
-                      fullWidth
-                      label="Email/Phone"
-                      id="fullWidth"
-                    />
-                    <br></br>
-                    <br></br>
+                  <TextField
+                    size="small"
+                    fullWidth
+                    label="Email/Phone"
+                    id="fullWidth"
+                  />
+                  <br></br>
+                  <br></br>
 
-                    <TextField
-                      size="small"
-                      fullWidth
-                      label="Password"
-                      id="fullWidth"
-                    />
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                  <TextField
+                    size="small"
+                    fullWidth
+                    label="Password"
+                    id="fullWidth"
+                  />
+                  <br></br>
+                  <br></br>
+                  <br></br>
 
-                    <Grid item xs={12}>
-                      <Typography align="center">
-                        <Button
-                          variant="contained"
-                          sx={{ background: "#FF311A", width: 100 }}
-                        >
-                          Login
-                        </Button>
-                      </Typography>
-                    </Grid>
-                  </Container>
+                  <Grid item xs={12}>
+                    <Typography align="center">
+                      <Button
+                        variant="contained"
+                        sx={{ background: "#FF311A", width: 100 }}
+                      >
+                        Login
+                      </Button>
+                    </Typography>
+                  </Grid>
+                </Container>
                 {/* </Container> */}
                 <br></br>
               </Grid>
               <Grid item lg={6} md={6}>
                 <Container>
-
-                <img
-                  style={{ width: 500, height:400,marginLeft:"15px" }}
-                  src={Profile35}
-                  alt="image13"
+                  <img
+                    style={{ width: 400, height: 500 }}
+                    src={Profile35}
+                    alt="image13"
                   />
-                  </Container>
+                </Container>
               </Grid>
             </Grid>
           </Container>
