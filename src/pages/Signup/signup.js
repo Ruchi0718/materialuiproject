@@ -84,7 +84,7 @@ const Signup = () => {
                     />
                     <br></br>
                     <br></br>
-                    <Grid item p={3} xs={12}>
+                    <Grid item p={2} xs={12}>
                       <Typography align="center">
                         <Button 
                           variant="contained"
@@ -100,8 +100,6 @@ const Signup = () => {
               </Grid>
             </Grid>
           </Container>
-          <br></br>
-          <br></br>
           <br></br>
         </>
       ) : (
