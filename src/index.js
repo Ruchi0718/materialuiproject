@@ -4,11 +4,10 @@ import "./index.css";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
+import Signup from "./pages/Signup/signup";
 // import Aboutus from "./pages/aboutus/aboutus";
-import UserProfile from "./pages/userprofile/userProfile";
+// import UserProfile from "./pages/userprofile/userProfile";
 // import Mydrawer from "./pages/mydrawer/mydrawer";
-
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,14 +20,11 @@ root.render(
             {/* <Route path="/" element={<Aboutus />} /> */}
             {/* <Route path="/filterui" element={<Filterui/>} /> */}
             {/* <Route path="/" element={<Mydrawer />} /> */}
-            <Route path="/" element={<UserProfile />} />
-
-
-
+            {/* <Route path="/" element={<UserProfile />} /> */}
+            <Route path="/" element={<Signup />} />
           </Routes>
         </BrowserRouter>
       </React.StrictMode>
-      
     </div>
   </>
 );
