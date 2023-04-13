@@ -29,7 +29,7 @@ const Signup = () => {
       {isMatch ? (
         <>
           <Container>
-            <Grid container sx={{ marginTop: { lg: "20%", xs: "45%" } }}>
+            <Grid container sx={{ marginTop: {  xs: "50%",sm:"20%",md:"20%" } }}>
               <Grid item xs={12} lg={6}>
                 <Box sx={{ width: "100%" }}>
                   <Tabs
@@ -70,7 +70,7 @@ const Signup = () => {
                     <TextField
                       size="small"
                       fullWidth
-                      label="fullWidth"
+                      label="Email/Phone"
                       id="fullWidth"
                     />
                     <br></br>
@@ -79,14 +79,14 @@ const Signup = () => {
                     <TextField
                       size="small"
                       fullWidth
-                      label="fullWidth"
+                      label="Password"
                       id="fullWidth"
                     />
                     <br></br>
                     <br></br>
-                    <Grid item xs={12}>
+                    <Grid item p={3} xs={12}>
                       <Typography align="center">
-                        <Button
+                        <Button 
                           variant="contained"
                           sx={{ background: "#FF311A", width: 100 }}
                         >
@@ -107,10 +107,18 @@ const Signup = () => {
       ) : (
         <>
           <Container>
-            <Grid container sx={{ marginTop: { lg: "20%", xs: "45%" } }}>
-              <Grid item xs={12} lg={6}>
-                <Box sx={{ width: "100%" }}>
-                  <Tabs
+            <Grid container sx={{ marginTop: { lg: "18%", xs: "45%",sm:"20%",md:"25%" } }}>
+              <Grid item    xs={12} lg={6} md={6}>
+                {/* <Container > */}
+              
+                  <Container
+                    sx={{
+                        marginTop:"10%",
+                      width: 500,
+                      maxWidth: "100%",
+                    }}
+                  >
+                        <Tabs
                     value={value}
                     onChange={handleChange}
                     aria-label="wrapped label tabs example"
@@ -132,21 +140,15 @@ const Signup = () => {
                     />
                   </Tabs>
                   <br></br>
-                  <Typography
+                  <Typography 
                     sx={{ fontSize: "12px", fontWeight: "bold", color: "grey" }}
                   >
                     Login with your credentials to find your life partner
                   </Typography>
-                  <Box
-                    sx={{
-                      width: 500,
-                      maxWidth: "100%",
-                    }}
-                  >
                     <TextField
                       size="small"
                       fullWidth
-                      label="fullWidth"
+                      label="Email/Phone"
                       id="fullWidth"
                     />
                     <br></br>
@@ -155,11 +157,13 @@ const Signup = () => {
                     <TextField
                       size="small"
                       fullWidth
-                      label="fullWidth"
+                      label="Password"
                       id="fullWidth"
                     />
                     <br></br>
                     <br></br>
+                    <br></br>
+
                     <Grid item xs={12}>
                       <Typography align="center">
                         <Button
@@ -170,16 +174,19 @@ const Signup = () => {
                         </Button>
                       </Typography>
                     </Grid>
-                  </Box>
-                </Box>
+                  </Container>
+                {/* </Container> */}
                 <br></br>
               </Grid>
-              <Grid item lg={6}>
+              <Grid item lg={6} md={6}>
+                <Container>
+
                 <img
-                  style={{ width: 650, height: 700 }}
+                  style={{ width: 500, height:400,marginLeft:"15px" }}
                   src={Profile35}
                   alt="image13"
-                />
+                  />
+                  </Container>
               </Grid>
             </Grid>
           </Container>
