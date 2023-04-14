@@ -20,7 +20,7 @@ const Footer = () => {
         }}
       >
         <Grid p={1} container>
-          <Grid item lg={3} sm={6} xs={12}>
+          <Grid item lg={3} sm={12} xs={12}>
             <Typography
               sx={{ fontWeight: "bold", marginLeft: { lg: "15%", xs: "6%" } }}
             >
@@ -44,7 +44,7 @@ const Footer = () => {
               <Typography>Customer Support</Typography>
             </Grid>
           </Grid>
-          <Grid item lg={3} sm={6} xs={12}>
+          <Grid item lg={3} sm={12} xs={12}>
             <Typography sx={{ fontWeight: "bold", marginLeft: "6%" }}>
               Support
             </Typography>
@@ -65,7 +65,7 @@ const Footer = () => {
               <Typography>Bottam Link2</Typography>
             </Grid>
           </Grid>
-          <Grid item lg={3} sm={6} xs={12}>
+          <Grid item lg={3} sm={12} xs={12}>
             <Typography sx={{ fontWeight: "bold", marginLeft: "6%" }}>
               Contact Info
             </Typography>
@@ -98,7 +98,7 @@ const Footer = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item lg={3} sm={6} xs={12}>
+          <Grid item lg={3} sm={12} xs={12}>
             <Typography sx={{ fontWeight: "bold", marginLeft: "6%" }}>
               Follow Us
             </Typography>
