@@ -107,11 +107,13 @@ const Signup = () => {
         </>
       ) : (
         <>
+        <Box>
+
           <Container>
             <Grid
               container
               sx={{ marginTop: { lg: "18%", xs: "45%", sm: "20%", md: "25%" } }}
-            >
+              >
               <Grid item xs={12} lg={6} md={6}>
                 {/* <Container > */}
 
@@ -120,28 +122,28 @@ const Signup = () => {
                     marginTop: "10%",
                     width: 500,
                     maxWidth: "100%",
-                  }}
+                }}
                 >
                   <Tabs
                     value={value}
                     onChange={handleChange}
                     aria-label="wrapped label tabs example"
-                  >
+                    >
                     <Tab
                       value="one"
                       label={
-                        <Typography
+                          <Typography
                           sx={{
-                            fontSize: "25px",
-                            fontWeight: "bold",
-                            color: "black",
-                          }}
+                              fontSize: "25px",
+                              fontWeight: "bold",
+                              color: "black",
+                            }}
                         >
                           Login
                         </Typography>
                       }
                       wrapped
-                    />
+                      />
                   </Tabs>
                   <br></br>
                   <Typography
@@ -154,7 +156,7 @@ const Signup = () => {
                     fullWidth
                     label="Email/Phone"
                     id="fullWidth"
-                  />
+                    />
                   <br></br>
                   <br></br>
 
@@ -163,7 +165,7 @@ const Signup = () => {
                     fullWidth
                     label="Password"
                     id="fullWidth"
-                  />
+                    />
                   <br></br>
                   <br></br>
                   <br></br>
@@ -188,7 +190,7 @@ const Signup = () => {
                     style={{ width: 400, height: 500 }}
                     src={Profile35}
                     alt="image13"
-                  />
+                    />
                 </Container>
               </Grid>
             </Grid>
@@ -196,6 +198,7 @@ const Signup = () => {
           <br></br>
           <br></br>
           <br></br>
+      </Box>
         </>
       )}
 
