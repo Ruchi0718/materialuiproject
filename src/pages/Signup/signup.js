@@ -81,7 +81,7 @@ const Login = () => {
                     }}
                   >
                     <TextField
-                      //   size="small"
+                        size="small"
                       fullWidth
                       label="Email/Phone"
                       id="fullWidth"
@@ -89,43 +89,65 @@ const Login = () => {
                     <br></br>
                     <br></br>
                     <TextField
-                      //   size="small"
+                        size="small"
                       fullWidth
                       label="Password"
                       id="fullWidth"
                     />
                     <br></br>
                     <br></br>
-                    <FormControl fullWidth>
-                      <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                    <FormControl fullWidth size="small">
+                      <InputLabel id="demo-select-small">Age</InputLabel>
                       <Select
-                        // size="small"
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
+                        labelId="demo-select-small"
+                        id="demo-select-small"
                         value={age}
                         label="Age"
                         onChange={handleChangeselect}
                       >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
                         <MenuItem value={10}>Ten</MenuItem>
                         <MenuItem value={20}>Twenty</MenuItem>
                         <MenuItem value={30}>Thirty</MenuItem>
                       </Select>
                     </FormControl>
+                    <br></br>
+                    <br></br>
+                   
+                    <FormControl fullWidth size="small">
+                      <InputLabel id="demo-select-small">Language</InputLabel>
+                      <Select
+                        labelId="demo-select-small"
+                        id="demo-select-small"
+                        // value={age}
+                        label="Age"
+                        // onChange={handleChange}
+                      >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                      </Select>
+                    </FormControl>
+                    <br></br>
                     <br></br>
 
-                    <br></br>
-                    <FormControl fullWidth>
-                      <InputLabel id="demo-simple-select-label">
-                        Religion{" "}
-                      </InputLabel>
+                    <FormControl fullWidth size="small">
+                      <InputLabel id="demo-select-small">Religion</InputLabel>
                       <Select
-                        // size="small"
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
+                        labelId="demo-select-small"
+                        id="demo-select-small"
+                        // value={age}
                         label="Age"
-                        // onChange={handleChangeselect}
+                        // onChange={handleChange}
                       >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
                         <MenuItem value={10}>Ten</MenuItem>
                         <MenuItem value={20}>Twenty</MenuItem>
                         <MenuItem value={30}>Thirty</MenuItem>
@@ -133,57 +155,20 @@ const Login = () => {
                     </FormControl>
                     <br></br>
                     <br></br>
-                    <FormControl fullWidth>
-                      <InputLabel id="demo-simple-select-label">
-                        Caste
-                      </InputLabel>
-                      <Select
-                        // size="small"
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
-                        label="Age"
-                        // onChange={handleChangeselect}
-                      >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                      </Select>
-                    </FormControl>
-                    <br></br>
-                    <br></br>
-                    <FormControl fullWidth>
-                      <InputLabel id="demo-simple-select-label">
-                        Language
-                      </InputLabel>
-                      <Select
-                        // size="small"
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
-                        label="Age"
-                        // onChange={handleChangeselect}
-                      >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                      </Select>
-                    </FormControl>
-                    <br></br>
-                    <br></br>
-                    <FormControl fullWidth>
-                      <InputLabel id="demo-simple-select-label">
-                        Location
-                      </InputLabel>
-                      <Select
-                        //   size="small"
 
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
+                    
+                    <FormControl fullWidth size="small">
+                      <InputLabel id="demo-select-small">Caste</InputLabel>
+                      <Select
+                        labelId="demo-select-small"
+                        id="demo-select-small"
+                        // value={age}
                         label="Age"
-                        // onChange={handleChangeselect}
+                        // onChange={handleChange}
                       >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
                         <MenuItem value={10}>Ten</MenuItem>
                         <MenuItem value={20}>Twenty</MenuItem>
                         <MenuItem value={30}>Thirty</MenuItem>
@@ -191,43 +176,66 @@ const Login = () => {
                     </FormControl>
                     <br></br>
                     <br></br>
-                    <FormControl fullWidth>
-                      <InputLabel id="demo-simple-select-label">
-                        Marrital Status
-                      </InputLabel>
-                      <Select
-                        //   size="small"
 
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
-                        label="Age"
-                        // onChange={handleChangeselect}
-                      >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                      </Select>
-                    </FormControl>
-                    <br></br>
-                    <br></br>
-                    <FormControl fullWidth>
-                      <InputLabel id="demo-simple-select-label">
-                        Height
-                      </InputLabel>
+                    <FormControl fullWidth size="small">
+                      <InputLabel id="demo-select-small">Location</InputLabel>
                       <Select
-                        //   size="small"
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
+                        labelId="demo-select-small"
+                        id="demo-select-small"
+                        // value={age}
                         label="Age"
-                        // onChange={handleChangeselect}
+                        // onChange={handleChange}
                       >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
                         <MenuItem value={10}>Ten</MenuItem>
                         <MenuItem value={20}>Twenty</MenuItem>
                         <MenuItem value={30}>Thirty</MenuItem>
                       </Select>
                     </FormControl>
+                    <br></br>
+                    <br></br>
+
+                    <FormControl fullWidth size="small">
+                      <InputLabel id="demo-select-small">Marital Status</InputLabel>
+                      <Select
+                        labelId="demo-select-small"
+                        id="demo-select-small"
+                        // value={age}
+                        label="Age"
+                        // onChange={handleChange}
+                      >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                      </Select>
+                    </FormControl>
+                    <br></br>
+                    <br></br>
+
+                    <FormControl fullWidth size="small">
+                      <InputLabel id="demo-select-small">Height</InputLabel>
+                      <Select
+                        labelId="demo-select-small"
+                        id="demo-select-small"
+                        // value={age}
+                        label="Age"
+                        // onChange={handleChange}
+                      >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                      </Select>
+                    </FormControl>
+
+
                     <Grid item p={2} xs={12}>
                       <Typography align="center">
                         <Button
@@ -313,13 +321,32 @@ const Login = () => {
                     />
                     <br></br>
                     <br></br>
+                    <FormControl fullWidth size="small">
+                      <InputLabel id="demo-select-small">Age</InputLabel>
+                      <Select
+                        labelId="demo-select-small"
+                        id="demo-select-small"
+                        value={age}
+                        label="Age"
+                        onChange={handleChangeselect}
+                      >
+                        <MenuItem value="">
+                          <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                      </Select>
+                    </FormControl>
+                    <br></br>
+                    <br></br>
 
                     <FormControl fullWidth size="small">
                       <InputLabel id="demo-select-small">Language</InputLabel>
                       <Select
                         labelId="demo-select-small"
                         id="demo-select-small"
-                        value={age}
+                        // value={age}
                         label="Age"
                         // onChange={handleChange}
                       >
@@ -339,7 +366,7 @@ const Login = () => {
                       <Select
                         labelId="demo-select-small"
                         id="demo-select-small"
-                        value={age}
+                        // value={age}
                         label="Age"
                         // onChange={handleChange}
                       >
@@ -360,7 +387,7 @@ const Login = () => {
                       <Select
                         labelId="demo-select-small"
                         id="demo-select-small"
-                        value={age}
+                        // value={age}
                         label="Age"
                         // onChange={handleChange}
                       >
@@ -380,7 +407,7 @@ const Login = () => {
                       <Select
                         labelId="demo-select-small"
                         id="demo-select-small"
-                        value={age}
+                        // value={age}
                         label="Age"
                         // onChange={handleChange}
                       >
@@ -400,7 +427,7 @@ const Login = () => {
                       <Select
                         labelId="demo-select-small"
                         id="demo-select-small"
-                        value={age}
+                        // value={age}
                         label="Age"
                         // onChange={handleChange}
                       >
@@ -420,7 +447,7 @@ const Login = () => {
                       <Select
                         labelId="demo-select-small"
                         id="demo-select-small"
-                        value={age}
+                        // value={age}
                         label="Age"
                         // onChange={handleChange}
                       >
