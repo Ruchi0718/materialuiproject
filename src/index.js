@@ -6,9 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 // import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/signup";
-// import Aboutus from "./pages/aboutus/aboutus";
-// import UserProfile from "./pages/userprofile/userProfile";
-// import Mydrawer from "./pages/mydrawer/mydrawer";
+import Aboutus from "./pages/aboutus/aboutus";
+import UserProfile from "./pages/userprofile/userProfile";
+import Home from "./pages/home/home";
+import Login from "./pages/Login/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,7 +21,6 @@ root.render(
             {/* <Route path="/" element={<Home />} /> */}
             {/* <Route path="/" element={<Aboutus />} /> */}
             {/* <Route path="/filterui" element={<Filterui/>} /> */}
-            {/* <Route path="/" element={<Mydrawer />} /> */}
             {/* <Route path="/" element={<UserProfile />} /> */}
             {/* <Route path="/" element={<Login />} /> */}
             <Route path="/" element={<Signup />} />
