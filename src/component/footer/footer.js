@@ -28,8 +28,7 @@ const Footer = () => {
             </Typography>
             <Grid
               sx={{
-                // textAlign: "justify",
-                // textJustify: "inter",
+              
                 marginLeft: { lg: "15%", xs: "9%" },
               }}
               item

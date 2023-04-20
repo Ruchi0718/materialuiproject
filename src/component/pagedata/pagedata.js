@@ -72,7 +72,6 @@ const PageData = () => {
         <Grid item p={5} lg={4} sm={6} xs={12}>
           <Box display="flex" justifyContent="center" alignItems="center">
             <img
-              // style={{ marginLeft: { lg: "20%", xs: "10%" } }}
               src={Image2}
               alt="image2"
               height={"110%"}
@@ -120,7 +119,6 @@ const PageData = () => {
 
         <Grid
           container
-          // m={6}
           sx={{ textAlign: { xs: "center", lg: "justify" } }}
         >
           <Grid item lg={3} sm={6} xs={12}>
@@ -133,7 +131,6 @@ const PageData = () => {
               sx={{
                 color: "white",
                 fontSize: "small",
-                // marginRight: { xs: "5%" },
               }}
             >
               FREE REGISTRATION
@@ -173,7 +170,6 @@ const PageData = () => {
               sx={{
                 color: "white",
                 fontSize: "small",
-                // marginRight: { xs: "5%" },
               }}
             >
               COMMUNICATE & MOVE AHEAD

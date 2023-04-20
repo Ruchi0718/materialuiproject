@@ -9,7 +9,6 @@ import {
 } from "@mui/material";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import MenuItem from "@mui/material/MenuItem";
-// import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import InputLabel from "@mui/material/InputLabel";
 import { Container } from "@mui/system";
@@ -54,9 +53,7 @@ const Form = () => {
           alignItems={{ lg: "center", xs: "center" }}
           justifyContent={"center"}
           sx={{
-            // border: "2px solid red",
             padding: 2,
-            // margin: "auto",
             width: { lg: 450, xs: 330 },
             height: { lg: 550 },
             marginTop: 4,

@@ -40,14 +40,7 @@ const AboutusSidebar = () => {
               <Grid item xs={1} >
                 <Filterui />
               </Grid>
-              {/* <Grid item xs={11}>
-                <Typography
-                  align="center"
-                  sx={{ fontSize: "20px", fontWeight: "bold" }}
-                >
-                  All Members
-                </Typography>
-              </Grid> */}
+          
             </Grid>
           </>
         ) : (
@@ -279,8 +272,7 @@ const AboutusSidebar = () => {
                       <Select
                         labelId="demo-simple-select-autowidth-label"
                         id="demo-simple-select-autowidth"
-                        // value={age}
-                        // onChange={handleChange}
+                       
                         autoWidth
                         label="Select One"
                       >
@@ -305,8 +297,7 @@ const AboutusSidebar = () => {
                       <Select
                         labelId="demo-simple-select-autowidth-label"
                         id="demo-simple-select-autowidth"
-                        // value={age}
-                        // onChange={handleChange}
+                        
                         autoWidth
                         label="Select One"
                       >
@@ -331,8 +322,7 @@ const AboutusSidebar = () => {
                       <Select
                         labelId="demo-simple-select-autowidth-label"
                         id="demo-simple-select-autowidth"
-                        // value={age}
-                        // onChange={handleChange}
+                       
                         autoWidth
                         label="Select One"
                       >
@@ -357,8 +347,7 @@ const AboutusSidebar = () => {
                       <Select
                         labelId="demo-simple-select-autowidth-label"
                         id="demo-simple-select-autowidth"
-                        // value={age}
-                        // onChange={handleChange}
+                       
                         autoWidth
                         label="Select One"
                       >
@@ -383,8 +372,7 @@ const AboutusSidebar = () => {
                       <Select
                         labelId="demo-simple-select-autowidth-label"
                         id="demo-simple-select-autowidth"
-                        // value={age}
-                        // onChange={handleChange}
+                     
                         autoWidth
                         label="Select One"
                       >
@@ -415,8 +403,7 @@ const AboutusSidebar = () => {
                       <Select
                         labelId="demo-simple-select-autowidth-label"
                         id="demo-simple-select-autowidth"
-                        // value={age}
-                        // onChange={handleChange}
+                     
                         autoWidth
                         label="Select One"
                       >
@@ -445,8 +432,7 @@ const AboutusSidebar = () => {
                       <Select
                         labelId="demo-simple-select-autowidth-label"
                         id="demo-simple-select-autowidth"
-                        // value={age}
-                        // onChange={handleChange}
+                 
                         autoWidth
                         label="Select One"
                       >
@@ -485,7 +471,6 @@ const AboutusSidebar = () => {
               width: { lg: "80%", sm: "100%", xs: "100%", md: "100%" },
               height: { lg: "32%", sm: "70%", xs: "80%", md: "99%" },
               aspectRatio: "/1",
-              // border: "2px solid #C0C0C0",
             }}
           >
             <Typography m={3} align="center" sx={{ fontWeight:"bold" }}>

@@ -113,6 +113,7 @@ const Header = () => {
             ) : (
               <>
                 <Tabs
+                
                   value={value}
                   textColor="white"
                   onChange={(e, value) => setValue(value)}

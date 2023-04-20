@@ -168,7 +168,6 @@ const Aboutus = () => {
       </Grid>
       <br></br>
 
-      {/* Contact us */}
 
       <Grid container>
         <Grid item m={2} lg={12} xs={12} sm={12} md={12}>

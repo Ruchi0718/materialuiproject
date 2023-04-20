@@ -19,13 +19,10 @@ const AboutusBody = () => {
       <div>
         {isMatch ? (
           <>
-            {/* <Container sx={{ border: "2px solid  #C0C0C0" }}> */}
             <Grid container>
               <Grid item lg={2} xs={6} sm={6}>
                 <img
                   src={Profile1}
-                  // height="100px"
-                  // width="150px"
                   style={{
                     width: "120px",
                     aspectRatio: "1/1",
@@ -77,24 +74,19 @@ const AboutusBody = () => {
               </Box>
               </Grid>
             </Grid>
-            {/* </Container> */}
           </>
         ) : (
           <>
-            {/* <Container sx={{ border: "2px solid  #C0C0C0" }}> */}
             <Grid container>
               <Grid item lg={4} xs={6}>
-                {/* <Card sx={{ maxWidth: 300, height: 200 }}> */}
                 <img
                   src={Profile1}
-                  // sx={{ margin: "auto" }}
                   style={{
                     width: "250px",
                     aspectRatio: "2/2",
                   }}
                   alt="textimage"
                 />
-                {/* </Card> */}
               </Grid>
               <Box sx={{ height: "40%", width: { lg: "60%" } }}>
                 <Grid xs={12}>
@@ -199,7 +191,6 @@ const AboutusBody = () => {
                 </Grid>
               </Box>
             </Grid>
-            {/* </Container> */}
           </>
         )}
       </div>

@@ -271,8 +271,7 @@ const Filterui = () => {
               <Select
                 labelId="demo-simple-select-autowidth-label"
                 id="demo-simple-select-autowidth"
-                // value={age}
-                // onChange={handleChange}
+            
                 autoWidth
                 label="Select One"
               >
@@ -303,8 +302,7 @@ const Filterui = () => {
               <Select
                 labelId="demo-simple-select-autowidth-label"
                 id="demo-simple-select-autowidth"
-                // value={age}
-                // onChange={handleChange}
+               
                 autoWidth
                 label="Select One"
               >
@@ -321,12 +319,7 @@ const Filterui = () => {
           <Grid
             item
             m={1}
-            sx={
-              {
-                // dispaly:"flex",
-                // flexDirection:"row",
-              }
-            }
+           
             lg={12}
             xs={12}
           >
@@ -340,8 +333,7 @@ const Filterui = () => {
               <Select
                 labelId="demo-simple-select-autowidth-label"
                 id="demo-simple-select-autowidth"
-                // value={age}
-                // onChange={handleChange}
+              
                 autoWidth
                 label="Select One"
               >
@@ -358,12 +350,7 @@ const Filterui = () => {
           <Grid
             item
             m={1}
-            sx={
-              {
-                // dispaly:"flex",
-                // flexDirection:"row",
-              }
-            }
+           
             lg={12}
             xs={12}
           >
@@ -377,8 +364,7 @@ const Filterui = () => {
               <Select
                 labelId="demo-simple-select-autowidth-label"
                 id="demo-simple-select-autowidth"
-                // value={age}
-                // onChange={handleChange}
+             
                 autoWidth
                 label="Select One"
               >
@@ -395,12 +381,7 @@ const Filterui = () => {
           <Grid
             item
             m={1}
-            sx={
-              {
-                // dispaly:"flex",
-                // flexDirection:"row",
-              }
-            }
+          
             lg={12}
             xs={12}
           >
@@ -414,8 +395,7 @@ const Filterui = () => {
               <Select
                 labelId="demo-simple-select-autowidth-label"
                 id="demo-simple-select-autowidth"
-                // value={age}
-                // onChange={handleChange}
+             
                 autoWidth
                 label="Select One"
               >
@@ -432,12 +412,7 @@ const Filterui = () => {
           <Grid
             item
             m={1}
-            sx={
-              {
-                // dispaly:"flex",
-                // flexDirection:"row",
-              }
-            }
+           
             lg={12}
             xs={12}
           >
@@ -451,8 +426,7 @@ const Filterui = () => {
               <Select
                 labelId="demo-simple-select-autowidth-label"
                 id="demo-simple-select-autowidth"
-                // value={age}
-                // onChange={handleChange}
+              
                 autoWidth
                 label="Select One"
               >
@@ -469,12 +443,7 @@ const Filterui = () => {
           <Grid
             item
             m={1}
-            sx={
-              {
-                // dispaly:"flex",
-                // flexDirection:"row",
-              }
-            }
+         
             lg={12}
             xs={12}
           >
@@ -488,8 +457,7 @@ const Filterui = () => {
               <Select
                 labelId="demo-simple-select-autowidth-label"
                 id="demo-simple-select-autowidth"
-                // value={age}
-                // onChange={handleChange}
+           
                 autoWidth
                 label="Select One"
               >
@@ -506,12 +474,7 @@ const Filterui = () => {
           <Grid
             item
             m={1}
-            sx={
-              {
-                // dispaly:"flex",
-                // flexDirection:"row",
-              }
-            }
+           
             lg={12}
             xs={12}
           >
