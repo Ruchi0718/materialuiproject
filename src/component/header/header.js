@@ -57,37 +57,9 @@ const Header = () => {
                     <Grid sx={{ marginTop: 2 }} item xs={4}>
                       <img src={Image13} alt="image13" />
                     </Grid>
-                    {/* <Grid item xs={4}>
-                      <Paper
-                        variant="outlined"
-                        sx={{
-                          height: 120,
-                          margin: 1,
-                          backgroundColor: "#36454F",
-                        }}
-                      >
-                        <Grid container xs={12}>
-                          <FormControlLabel
-                            sx={{ color: "white", marginLeft: "20px" }}
-                            control={<Checkbox defaultChecked />}
-                            label="CLASSIFIED WEBSITE"
-                          />
-                          <FormControlLabel
-                            sx={{ color: "white", marginLeft: "20px" }}
-                            control={<Checkbox defaultChecked />}
-                            label="DIRECTORY WEBSITE"
-                          />
-                          <FormControlLabel
-                            sx={{ color: "white", marginLeft: "20px" }}
-                            control={<Checkbox defaultChecked />}
-                            label="MARKET PLACE WEBSITE"
-                          />
-                        </Grid>
-                      </Paper>
-                    </Grid> */}
+                   
                     <Grid item xs={8}>
                       <Stack
-                        // sx={{ marginLeft: "30%" }}
                         m={3}
                         spacing={2}
                         direction="row"
@@ -151,7 +123,7 @@ const Header = () => {
                   <Link to={"/aboutus"}>
                     <Tab sx={{color:"white"}} label="ABOUTUS" />
                   </Link>
-                  <Link to={"/login"}>
+                  <Link to={"/userprofile"}>
                     <Tab sx={{color:"white"}} label="USERPROFILE" />
                   </Link>
 
