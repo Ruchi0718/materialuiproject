@@ -12,8 +12,9 @@ import {
   Stack,
   Avatar,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
-import { Grid,} from "@mui/material";
+import { Grid } from "@mui/material";
 import Image13 from "../../assets/image13.jpg";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -25,7 +26,6 @@ import Drawercomp from "../Drawercomp";
 import Header1responsive from "../header1responsive/headerresponsive";
 
 const Header = () => {
-  const Pages = ["HOME", "ABOUTUS", "MEMBERSHIP", "CONTACT", "LOGIN", "SEARCH"];
   const [value, setValue] = useState("");
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
@@ -93,7 +93,7 @@ const Header = () => {
                         direction="row"
                       >
                         <Button
-                          sx={{ background: "#FF311A" ,marginLeft:"70%"}}
+                          sx={{ background: "#FF311A", marginLeft: "70%" }}
                           startIcon={<AddIcon />}
                           variant="contained"
                         >
@@ -145,9 +145,23 @@ const Header = () => {
                   textColor="white"
                   onChange={(e, value) => setValue(value)}
                 >
-                  {Pages.map((page, index) => (
-                    <Tab key={index} label={page} />
-                  ))}
+                  <Link to={"/"}>
+                    <Tab sx={{color:"white"}} label="HOME" />
+                  </Link>
+                  <Link to={"/aboutus"}>
+                    <Tab sx={{color:"white"}} label="ABOUTUS" />
+                  </Link>
+                  <Link to={"/login"}>
+                    <Tab sx={{color:"white"}} label="USERPROFILE" />
+                  </Link>
+
+                  <Link to={"/login"}>
+                    <Tab  sx={{color:"white"}}label="LOGIN" />
+                  </Link>
+
+                  <Link to={"/signup"}>
+                    <Tab sx={{color:"white"}} label="SIGNUP" />
+                  </Link>
                 </Tabs>
               </>
             )}

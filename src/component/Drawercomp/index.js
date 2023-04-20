@@ -13,8 +13,8 @@ import React, { useState } from "react";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 import AddIcon from "@mui/icons-material/Add";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 const Drawercomp = () => {
-  const Pages = ["HOME", "ABOUTUS", "MEMBERSHIP", "CONTACT", "LOGIN", "SEARCH"];
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <>
@@ -32,13 +32,31 @@ const Drawercomp = () => {
           justifyContent="center"
         >
           <List>
-            {Pages.map((page, index) => (
-              <ListItemButton key={index}>
-                <ListItemIcon>
-                  <ListItemText>{page}</ListItemText>
-                </ListItemIcon>
-              </ListItemButton>
-            ))}
+            <ListItemButton component={Link} to="/">
+              <ListItemIcon>
+                <ListItemText>HOME</ListItemText>
+              </ListItemIcon>
+            </ListItemButton>
+            <ListItemButton component={Link} to="/aboutus">
+              <ListItemIcon>
+                <ListItemText>ABOUTUS</ListItemText>
+              </ListItemIcon>
+            </ListItemButton>{" "}
+            <ListItemButton component={Link} to="/userprofile">
+              <ListItemIcon>
+                <ListItemText>USERPROFILE</ListItemText>
+              </ListItemIcon>
+            </ListItemButton>{" "}
+            <ListItemButton component={Link} to="/login">
+              <ListItemIcon>
+                <ListItemText>LOGIN</ListItemText>
+              </ListItemIcon>
+            </ListItemButton>{" "}
+            <ListItemButton component={Link} to="/signup">
+              <ListItemIcon>
+                <ListItemText>SIGNUP</ListItemText>
+              </ListItemIcon>
+            </ListItemButton>
             <Typography align="center">
               <Button
                 sx={{ background: "#FF311A" }}

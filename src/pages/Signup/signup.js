@@ -67,6 +67,8 @@ const Login = () => {
                     />
                   </Tabs>
                   <br></br>
+                  <br></br>
+
                   <Typography
                     sx={{ fontSize: "12px", fontWeight: "bold", color: "grey" }}
                   >
@@ -80,7 +82,7 @@ const Login = () => {
                       maxWidth: "100%",
                     }}
                   >
-                    <Grid container spacing={1}>
+                    <Grid container  spacing={1}>
                       <Grid item xs={12} sm={12}>
                         <TextField
                           size="small"
@@ -89,6 +91,12 @@ const Login = () => {
                           id="fullWidth"
                         />
                       </Grid>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+
+                   
+
                       <Grid item xs={12} sm={12}>
                         <TextField
                           size="small"
@@ -99,6 +107,9 @@ const Login = () => {
                       </Grid>
                       <br></br>
                       <br></br>
+
+                      <br></br>
+
                       {/* <FormControl fullWidth size="small">
                         <InputLabel id="demo-select-small">Age</InputLabel>
                         <Select
@@ -133,6 +144,7 @@ const Login = () => {
                           </Select>
                         </FormControl>
                       </Grid>
+                      
                       <Grid item xs={4} sm={4}>
                         <FormControl sx={{ minWidth: 90 }} size="small">
                           <InputLabel id="demo-select-small">Month</InputLabel>
@@ -165,6 +177,10 @@ const Login = () => {
                           </Select>
                         </FormControl>
                       </Grid>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+
                       <Grid item xs={6} sm={6}>
                         <FormControl fullWidth size="small">
                           <InputLabel id="demo-select-small">
@@ -182,6 +198,7 @@ const Login = () => {
                           </Select>
                         </FormControl>
                       </Grid>
+
                       <Grid item xs={6} sm={6}>
                         <FormControl fullWidth size="small">
                           <InputLabel id="demo-select-small">
@@ -200,6 +217,9 @@ const Login = () => {
                           </Select>
                         </FormControl>
                       </Grid>
+                      <br></br>
+                      <br></br>
+                      <br></br>
                       <Grid item xs={6} sm={6}>
                         <FormControl fullWidth size="small">
                           <InputLabel id="demo-select-small">
@@ -239,6 +259,8 @@ const Login = () => {
                       </Grid>
                       <br></br>
                       <br></br>
+                      <br></br>
+
                       <Grid item xs={6} sm={6}>
                         <FormControl fullWidth size="small">
                           <InputLabel id="demo-select-small">City</InputLabel>
@@ -271,6 +293,10 @@ const Login = () => {
                           </Select>
                         </FormControl>
                       </Grid>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+
                       <Grid item xs={6} sm={6}>
                         <FormControl fullWidth size="small">
                           <InputLabel id="demo-select-small">

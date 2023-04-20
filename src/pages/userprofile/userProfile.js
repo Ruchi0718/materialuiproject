@@ -9,6 +9,7 @@ import {
   Button,
   Paper,
   Tabs,
+  Modal,
   Tab,
 } from "@mui/material";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
@@ -20,11 +21,90 @@ import Imagecouple22 from "../../assets/imagecouple22.avif";
 import "./userProfile.css";
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/footer";
+import ChatBot from "react-simple-chatbot";
 const UserProfile = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const [value, setValue] = React.useState("one");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+  };
+  const steps = [
+    {
+      id: "Greet",
+
+      message: "Hello, Welcome to our shop",
+
+      trigger: "Done",
+    },
+
+    {
+      id: "Done",
+
+      message: "Please enter your name!",
+
+      trigger: "waiting1",
+    },
+
+    {
+      id: "waiting1",
+
+      user: true,
+
+      trigger: "Name",
+    },
+
+    {
+      id: "Name",
+
+      message: "Hi {previousValue}, Please select your issue",
+
+      trigger: "issues",
+    },
+
+    {
+      id: "issues",
+
+      options: [
+        {
+          value: "React",
+
+          label: "React",
+
+          trigger: "React",
+        },
+
+        { value: "Angular", label: "Angular", trigger: "Angular" },
+      ],
+    },
+
+    {
+      id: "React",
+
+      message:
+        "Thanks for letting your React issue, Our team will resolve your issue ASAP",
+
+      end: true,
+    },
+
+    {
+      id: "Angular",
+
+      message:
+        "Thanks for letting your Angular issue, Our team will resolve your issue ASAP",
+
+      end: true,
+    },
+  ];
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+
+    // p: 4,
   };
   return (
     <>
@@ -32,24 +112,26 @@ const UserProfile = () => {
       <Container
         sx={{ marginTop: { xs: "44%", sm: "25%", lg: "16%", md: "25%" } }}
       >
-        <Grid container direction={"row"} sx={{marginLeft:{lg:"6%",xs:"14%",sm:"15%"}}}>
-          <Grid item >
+        <Grid
+          container
+          direction={"row"}
+          sx={{ marginLeft: { lg: "6%", xs: "14%", sm: "15%" } }}
+        >
+          <Grid item>
             <Typography
-              sx={{ fontSize: "14px", fontWeight: "bold", color: "grey", }}
+              sx={{ fontSize: "14px", fontWeight: "bold", color: "grey" }}
             >
               Home
-            </Typography> 
-            
-            
+            </Typography>
           </Grid>
-          <Grid item >
+          <Grid item>
             <Typography>
               <Icon sx={{ width: 20, height: 20, color: "grey" }}>
                 <ArrowRightIcon />
               </Icon>
             </Typography>
           </Grid>
-          <Grid item >
+          <Grid item>
             <Typography
               sx={{ fontSize: "14px", fontWeight: "bold", color: "grey" }}
             >
@@ -60,7 +142,11 @@ const UserProfile = () => {
         <Grid container m={1}>
           <Grid item xs={12}>
             <Typography
-              sx={{ fontSize: "25px", fontWeight: "bold", marginLeft:{lg:"5%",xs:"12%",sm:"13%",md:"14%"}}}
+              sx={{
+                fontSize: "25px",
+                fontWeight: "bold",
+                marginLeft: { lg: "5%", xs: "12%", sm: "13%", md: "14%" },
+              }}
             >
               User Profile
             </Typography>
@@ -277,12 +363,24 @@ const UserProfile = () => {
                       </Grid>
                       <Grid item xs={6}>
                         <Button
+                          n
+                          onClick={handleOpen}
                           variant="contained"
                           sx={{ background: "#FF311A" }}
                         >
                           Chat Us
                         </Button>
                       </Grid>
+                      <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                      >
+                        <Box sx={style}>
+                          <ChatBot steps={steps} />
+                        </Box>
+                      </Modal>
                     </Grid>
                   </Container>
                 </Paper>
@@ -290,6 +388,7 @@ const UserProfile = () => {
             </Grid>
           </Grid>
         </Grid>
+
         <br></br>
         <br></br>
         <br></br>
@@ -317,29 +416,28 @@ const UserProfile = () => {
           </Grid>
         </Grid>
         <br></br>
-<Container>
+        <Container>
+          <Grid container m={1}>
+            <Grid item xs={12}>
+              <Typography sx={{ fontSize: "20px", fontWeight: "bold" }}>
+                About Suraj
+              </Typography>
+            </Grid>
+            <br></br>
+            <br></br>
 
-        <Grid container m={1}>
-          <Grid item xs={12}>
-            <Typography sx={{ fontSize: "20px", fontWeight: "bold" }}>
-              About Suraj
-            </Typography>
+            <Grid item xs={12}>
+              <Typography align="justify" sx={{ fontSize: "15px" }}>
+                When its colder than the far side of the moon and splitting rain
+                too,you have still to look good.From water-repellant leather to
+                a rugged outsole,the Lunar Force 1 adapter AF-1 style so you can
+                keep your flame burning when the weather hits.Metal lace
+                hardware and extended tongue bring mountain boot toughness,while
+                the star-studded toe design gives your look the edge.
+              </Typography>
+            </Grid>
           </Grid>
-          <br></br>
-          <br></br>
-
-          <Grid item xs={12}>
-            <Typography  align="justify" sx={{ fontSize: "15px" }}>
-              When its colder than the far side of the moon and splitting rain
-              too,you have still to look good.From water-repellant leather to a
-              rugged outsole,the Lunar Force 1 adapter AF-1 style so you can
-              keep your flame burning when the weather hits.Metal lace hardware
-              and extended tongue bring mountain boot toughness,while the
-              star-studded toe design gives your look the edge.
-            </Typography>
-          </Grid>
-        </Grid>
-</Container>
+        </Container>
       </Container>
       <br></br>
       <br></br>

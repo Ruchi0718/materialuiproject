@@ -4,12 +4,11 @@ import "./index.css";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-// import Login from "./pages/Login/Login";
+import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/signup";
-// import Aboutus from "./pages/aboutus/aboutus";
-// import UserProfile from "./pages/userprofile/userProfile";
-// import Home from "./pages/home/home";
-// import Login from "./pages/Login/Login";
+import Aboutus from "./pages/aboutus/aboutus";
+import UserProfile from "./pages/userprofile/userProfile";
+import Home from "./pages/home/home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,12 +17,12 @@ root.render(
       <React.StrictMode>
         <BrowserRouter>
           <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
-            {/* <Route path="/" element={<Aboutus />} /> */}
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutus" element={<Aboutus />} />
             {/* <Route path="/filterui" element={<Filterui/>} /> */}
-            {/* <Route path="/" element={<UserProfile />} /> */}
-            {/* <Route path="/" element={<Login />} /> */}
-            <Route path="/" element={<Signup />} />
+            <Route path="/userprofile" element={<UserProfile />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
 
           </Routes>
         </BrowserRouter>
